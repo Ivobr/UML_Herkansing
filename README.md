@@ -1,4 +1,3 @@
 # herkansing UML
 
-Kapitein 1 oog is here
-wow wat gezellig
+Hele groep naar de herkansing here we go
