@@ -9,3 +9,8 @@ https://drive.google.com/file/d/1lUkUHB97te3uzk8_DXjSn-jlEDkDy3Ec/view?usp=shari
 ## Link refectoring guru
 
 https://refactoring.guru/design-patterns/ 
+
+
+## Danny kon niet werken
+(luister trouwens maar niet bij je familie)
+Zaterdag stond je ingeroosterd 
