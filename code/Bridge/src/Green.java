@@ -1,5 +1,6 @@
-public class Red implements Color{
-    private String color = "Red";
+public class Green implements Color{
+    private String color = "Green";
+
     @Override
     public String colorName() {
         this.color = color;

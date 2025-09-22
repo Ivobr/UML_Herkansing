@@ -1,6 +1,8 @@
 public class Blue implements Color{
+    private String color = "Blue";
     @Override
     public String colorName(){
-        return "Blue";
+        this.color = color;
+        return color;
     }
 }
