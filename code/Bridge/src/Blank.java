@@ -1,6 +1,7 @@
-public class Green implements Color{
-    private String color = "Green";
-    private int prijs = 600;
+public class Blank implements Color{
+    private String color = "None";
+
+    private int prijs = 0;
 
     @Override
     public String colorName() {
@@ -9,7 +10,7 @@ public class Green implements Color{
     }
 
     @Override
-    public Integer prijs(){
+    public Integer prijs() {
         this.prijs = prijs;
         return prijs;
     }
