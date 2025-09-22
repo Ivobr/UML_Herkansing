@@ -1,6 +1,6 @@
-package code;
+package code.Factory;
 
-public class DFabriek implements AutoFabriek{
+public class DFabriek implements AutoFabriek {
     @Override
     public BenzineAuto createBenzineAuto() {
         return new DAutoBenzine();

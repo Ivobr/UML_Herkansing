@@ -1,4 +1,6 @@
-package code;
+package code.Factory;
+
+import code.Factory.*;
 
 public class GFabriek implements AutoFabriek {
     @Override

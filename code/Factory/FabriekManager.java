@@ -1,4 +1,8 @@
-package code;
+package code.Factory;
+
+import code.Factory.AutoFabriek;
+import code.Factory.BenzineAuto;
+import code.Factory.ElektrischeAuto;
 
 public class FabriekManager {
 
