@@ -6,4 +6,7 @@ public class GAutoElektrisch implements ElektrischeAuto{
     public void zoom() {
         System.out.println("Go zoom");
     }
+
+    @Override
+    public void informatie(){}
 }

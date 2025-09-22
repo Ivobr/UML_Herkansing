@@ -2,6 +2,6 @@ package code;
 
 
 public interface AutoFabriek {
-    BenzineAuto createBenzineAuto();
-    ElektrischeAuto createElektrischeAuto();
+    BenzineAuto createBenzineAuto(Color color);
+    ElektrischeAuto createElektrischeAuto(Color color);
 }
