@@ -10,6 +10,7 @@ public class FabriekManager {
         elektrischeAuto = fabriek.createElektrischeAuto();
     }
 
+
     public void rij(){
         benzineAuto.vroom();
         elektrischeAuto.zoom();
