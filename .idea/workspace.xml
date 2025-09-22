@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Sorry Mees">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/DAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/DAutoElektrisch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/DFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/DFabriek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/FabriekManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/GAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/GAutoElektrisch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/GFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/GFabriek.java" afterDir="false" />
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="dsf">
+      <change afterPath="$PROJECT_DIR$/code/Bridge/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Red.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sorry Mees" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorry Mees" />
+    <MESSAGE value="dsf" />
+    <option name="LAST_COMMIT_MESSAGE" value="dsf" />
   </component>
 </project>
