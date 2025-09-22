@@ -1,3 +1,5 @@
+package code.Bridge.src;
+
 public class Blank implements Color{
     private String color = "None";
 

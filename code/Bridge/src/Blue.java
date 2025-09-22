@@ -1,3 +1,5 @@
+package code.Bridge.src;
+
 public class Blue implements Color{
     private String color = "Blue";
     private int prijs = 400;
