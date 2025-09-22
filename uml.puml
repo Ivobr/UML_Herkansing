@@ -1,0 +1,47 @@
+@startuml
+
+interface AutoFabriek {
+    +createBenzineAuto(): BenzineAuto
+    +createElektrischeAuto(): ElektrischeAuto
+}
+
+interface BenzineAuto {
+    +vroom(): void
+}
+
+interface ElektrischeAuto {
+    +zoom(): void
+}
+
+class GFabriek implements AutoFabriek
+class DFabriek implements AutoFabriek
+
+class GAutoBenzine implements BenzineAuto
+class DAutoBenzine implements BenzineAuto
+
+class GAutoElektrisch implements ElektrischeAuto
+class DAutoElektrisch implements ElektrischeAuto
+
+class FabriekManager {
+    -benzineAuto: BenzineAuto
+    -elektrischeAuto: ElektrischeAuto
+    +FabriekManager(fabriek: AutoFabriek)
+    +rij(): void
+}
+
+class Main
+
+AutoFabriek <|.. GFabriek
+AutoFabriek <|.. DFabriek
+
+BenzineAuto <|.. GAutoBenzine
+BenzineAuto <|.. DAutoBenzine
+
+ElektrischeAuto <|.. GAutoElektrisch
+ElektrischeAuto <|.. DAutoElektrisch
+
+FabriekManager --> AutoFabriek
+FabriekManager --> BenzineAuto
+FabriekManager --> ElektrischeAuto
+
+@enduml
