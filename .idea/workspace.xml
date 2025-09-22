@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/BenzineAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/BenzineAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Blank.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Blank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Blue.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Blue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/DAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/DAutoBenzine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Green.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Green.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Red.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="i-know-this-isnt-main-i-just-cant-prove-it" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -38,18 +36,21 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="32UrAzeb7sXs9m521vfzu2y9hdX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
