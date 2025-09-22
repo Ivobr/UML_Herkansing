@@ -4,10 +4,11 @@ public class FabriekManager {
 
     private BenzineAuto benzineAuto;
     private ElektrischeAuto elektrischeAuto;
+    private String color = "";
 
     public FabriekManager(AutoFabriek fabriek){
-        benzineAuto = fabriek.createBenzineAuto(new Red());
-        elektrischeAuto = fabriek.createElektrischeAuto(new Red());
+        benzineAuto = fabriek.createBenzineAuto(color);
+        elektrischeAuto = fabriek.createElektrischeAuto(color);
     }
 
 
