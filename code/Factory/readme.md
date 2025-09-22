@@ -23,3 +23,5 @@ Die worden gemaakt in een fabriek.
  Welke dan het object van de autos zijn.
  
  Volg je het nog???
+
+ HELP DIT GAAT FOUT
