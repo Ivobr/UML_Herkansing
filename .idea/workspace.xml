@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Sorry Mees">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/AutoFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/AutoFabriek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/BenzineAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/BenzineAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/DAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/DAutoBenzine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/DAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/DAutoElektrisch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/DFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/DFabriek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ElektrischeAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ElektrischeAuto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/FabriekManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/GAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/GAutoBenzine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/GAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/GAutoElektrisch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/GFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/GFabriek.java" afterDir="false" />
     </list>
@@ -65,6 +59,15 @@
       <option name="presentableId" value="Default" />
       <updated>1757485852964</updated>
     </task>
+    <task id="LOCAL-00001" summary="Sorry Mees">
+      <option name="closed" value="true" />
+      <created>1758539970231</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1758539970231</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sorry Mees" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorry Mees" />
   </component>
 </project>

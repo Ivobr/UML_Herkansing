@@ -1,7 +1,7 @@
 package code;
 
 public class GAutoElektrisch implements ElektrischeAuto{
-
+    private Color color;
     @Override
     public void zoom() {
         System.out.println("Go zoom");
@@ -9,4 +9,8 @@ public class GAutoElektrisch implements ElektrischeAuto{
 
     @Override
     public void informatie(){}
+
+    public GAutoElektrisch(Color color){
+        this.color = color;
+    }
 }

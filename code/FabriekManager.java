@@ -15,5 +15,6 @@ public class FabriekManager {
         benzineAuto.vroom();
         benzineAuto.informatie();
         elektrischeAuto.zoom();
+        elektrischeAuto.informatie();
     }
 }

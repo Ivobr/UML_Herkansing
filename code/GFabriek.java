@@ -8,6 +8,6 @@ public class GFabriek implements AutoFabriek {
 
     @Override
     public ElektrischeAuto createElektrischeAuto(Color color) {
-        return new GAutoElektrisch();
+        return new GAutoElektrisch(color);
     }
 }
