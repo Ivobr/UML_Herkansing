@@ -1,7 +1,7 @@
 # Bridge
 De bridge werkt op de Benzine en Elektrische auto interface
 
-De interface zelf krijgt ``informatie()`` erbij om de kleur op te vragen/printen.
+De interface zelf krijgt ``informatie()`` erbij om de kleur & prijs op te vragen/printen.
 
 Er komt een interface genaamd ``Color`` bij.
 
