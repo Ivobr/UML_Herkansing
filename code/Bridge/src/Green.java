@@ -2,7 +2,7 @@ package code.Bridge.src;
 
 public class Green implements Color{
     private String color = "Green";
-    private int prijs = 600;
+    private int prijs = 1300;
 
     @Override
     public String colorName() {

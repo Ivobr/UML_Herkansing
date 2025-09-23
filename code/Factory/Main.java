@@ -6,7 +6,7 @@ public class Main{
         AutoFabriek GFabriek = new GFabriek();
         FabriekManager GManager = new FabriekManager(GFabriek);
 
-        System.out.println("goedkope Fabriek Runt");
+        System.out.println("Goedkope Fabriek Runt");
 
         return GManager;
     }
