@@ -57,3 +57,19 @@ Specerijen van de maan\
 Grote lichten in de mist, gordel om is een plicht\
 Ik speel wat fifa met je nicht\
 En ik zeg haar dit.
+
+## Wobbly
+*Insert Autotune 120% *
+
+WWWHHHHOOOOOOOAAAAAAAAAA
+WWWWWHHHOOOOOOAAAAA
+
+Swoop it down, wobble it, wiggle it, wobble it, wiggle it\
+Wobble it, wiggle it, wobble it, wiggle it, WHAOOOOAAAAAAa\
+Swing
+
+WWWHHHHOOOOOOOAAAAAAAAAA
+WWWWWHHHOOOOOOAAAAA
+
+Swoop it down, wobble it, wiggle it, wobble it, wiggle it\
+Wobble it, wiggle it, wobble it, wiggle it, WHAOOOOAAAAAAa
