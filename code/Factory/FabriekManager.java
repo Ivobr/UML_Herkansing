@@ -17,18 +17,16 @@ public class FabriekManager {
     }
 
     public BenzineAuto makeBenzineAuto(AutoFabriek fabriek, Color kleur){
-        BenzineAuto benzineAuto = fabriek.createBenzineAuto(kleur);
+        this.benzineAuto = fabriek.createBenzineAuto(kleur);
         System.out.println("Benzine auto gemaakt");
-        benzineAuto.informatie();
-        this.benzineAuto = benzineAuto;
+//        benzineAuto.informatie();
         return benzineAuto;
     }
 
     public ElektrischeAuto makeElektrischeAuto(AutoFabriek fabriek, Color kleur){
-        ElektrischeAuto elektrischeAuto = fabriek.createElektrischeAuto(kleur);
+        this.elektrischeAuto = fabriek.createElektrischeAuto(kleur);
         System.out.println("Elektrische auto gemaakt");
-        elektrischeAuto.informatie();
-        this.elektrischeAuto = elektrischeAuto;
+//        elektrischeAuto.informatie();
         return elektrischeAuto;
     }
 
@@ -37,14 +35,20 @@ public class FabriekManager {
     }
 
     public void rij(){
-        benzineAuto.vroom();
-        elektrischeAuto.zoom();
+        if(benzineAuto != null) {
+            benzineAuto.vroom();
+        }
+        if(elektrischeAuto != null) {
+            elektrischeAuto.zoom();
+        }
     }
 
     public void informatie(){
-        benzineAuto.informatie();
-        System.out.println(" ");
-        elektrischeAuto.informatie();
-        System.out.println(" ");
+        if(benzineAuto != null) {
+            benzineAuto.informatie();
+        }
+        if(elektrischeAuto != null) {
+            elektrischeAuto.informatie();
+        }
     }
 }

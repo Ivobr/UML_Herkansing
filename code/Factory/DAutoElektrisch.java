@@ -12,6 +12,7 @@ public class DAutoElektrisch implements ElektrischeAuto {
 
     @Override
     public void informatie(){
+        System.out.println(" ");
         System.out.println(color.colorName());
         System.out.println("DAutoElektrisch €" + ProductiePrijs);
     }

@@ -12,6 +12,7 @@ public class GAutoBenzine implements BenzineAuto {
 
     @Override
     public void informatie(){
+        System.out.println(" ");
         System.out.println(color.colorName());
         System.out.println("GAutoBenzine €"+ ProductiePrijs);
     }

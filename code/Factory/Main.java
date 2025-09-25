@@ -26,7 +26,6 @@ public class Main{
     public static BenzineAuto makeBenzineCar(FabriekManager fabriekManager, AutoFabriek fabriek){
         Color kleur = new Red();
         BenzineAuto newCar = fabriekManager.makeBenzineAuto(fabriek, kleur);
-
         return newCar;
     }
 
@@ -39,6 +38,7 @@ public class Main{
     public static void main(String[] args){
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
+
         makeBenzineCar(GManager, GManager.getFabriek());
         makeElektrischeAuto(GManager, GManager.getFabriek());
 

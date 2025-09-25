@@ -11,8 +11,9 @@ public class DAutoBenzine implements BenzineAuto {
 
     @Override
     public void informatie(){
+        System.out.println(" ");
         System.out.println(color.colorName());
-        System.out.println("€"+ ProductiePrijs);
+        System.out.println("DAutoBenzine €"+ ProductiePrijs);
     }
 
     public DAutoBenzine(Color color){
