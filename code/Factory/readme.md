@@ -25,3 +25,7 @@ Die worden gemaakt in een fabriek.
  Volg je het nog???
 
  HELP DIT GAAT FOUT
+
+Het gaat niet meer fout.
+
+De bridge zit nu vast eraan via de main eff een kleur mee geven via ``Color kleur = new *Gekozen kleur*();``

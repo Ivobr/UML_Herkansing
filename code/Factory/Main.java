@@ -3,9 +3,13 @@ package code.Factory;
 public class Main{
 
     public static FabriekManager setupG(){
-        Color kleur = new Red();
+        Color Rood = new Red();
+        Color Blauw = new Blue();
+        Color Groen = new Green();
+        Color geen = new Blank();
+
         AutoFabriek GFabriek = new GFabriek();
-        FabriekManager GManager = new FabriekManager(GFabriek, kleur);
+        FabriekManager GManager = new FabriekManager(GFabriek, Rood);
 
         System.out.println("Goedkope Fabriek Runt");
 
