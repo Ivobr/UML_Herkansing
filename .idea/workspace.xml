@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Operator could you pick that phone??">
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Blank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Blue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Green.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Red.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Factory/Blank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Factory/Blue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Factory/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Factory/Green.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Factory/Red.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/BenzineAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facade-Factory/src/BenzineAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/BenzineAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/BenzineAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DAutoBenzine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/DFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DFabriek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/ElektrischeAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/ElektrischeAuto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/FabriekManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/GFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GFabriek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
