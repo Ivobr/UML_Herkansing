@@ -1,6 +1,5 @@
 package code.Bridge.src;
 public class Main {
-    public static double winstmarge = 1.20;
     public static void main(String[] args) {
         System.out.println("Hello world!");
         BenzineAuto blueCar = new DAutoBenzine(new Blue());

@@ -3,8 +3,9 @@ package code.Factory;
 public class Main{
 
     public static FabriekManager setupG(){
+        Color kleur = new Red();
         AutoFabriek GFabriek = new GFabriek();
-        FabriekManager GManager = new FabriekManager(GFabriek);
+        FabriekManager GManager = new FabriekManager(GFabriek, kleur);
 
         System.out.println("Goedkope Fabriek Runt");
 
@@ -12,8 +13,9 @@ public class Main{
     }
 
     public static FabriekManager setupD(){
+       Color kleur = new Green();
         AutoFabriek DFabriek = new DFabriek();
-        FabriekManager DManager = new FabriekManager(DFabriek);
+        FabriekManager DManager = new FabriekManager(DFabriek, kleur);
 
         System.out.println("Dure fabriek runt");
 
@@ -26,9 +28,11 @@ public class Main{
 
         System.out.println("Goedkope auto doet");
         GManager.rij();
+        GManager.informatie();
 
         System.out.println("Dure auto doet");
         DManager.rij();
+        DManager.informatie();
 
     }
 

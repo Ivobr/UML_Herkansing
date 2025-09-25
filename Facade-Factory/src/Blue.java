@@ -1,0 +1,2 @@
+public class Blue {
+}

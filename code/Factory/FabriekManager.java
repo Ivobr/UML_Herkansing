@@ -9,14 +9,21 @@ public class FabriekManager {
     private BenzineAuto benzineAuto;
     private ElektrischeAuto elektrischeAuto;
 
-    public FabriekManager(AutoFabriek fabriek){
-        benzineAuto = fabriek.createBenzineAuto();
-        elektrischeAuto = fabriek.createElektrischeAuto();
+    public FabriekManager(AutoFabriek fabriek, Color kleur){
+        benzineAuto = fabriek.createBenzineAuto(kleur);
+        elektrischeAuto = fabriek.createElektrischeAuto(kleur);
     }
 
 
     public void rij(){
         benzineAuto.vroom();
         elektrischeAuto.zoom();
+    }
+
+    public void informatie(){
+        benzineAuto.informatie();
+        System.out.println(" ");
+        elektrischeAuto.informatie();
+        System.out.println(" ");
     }
 }

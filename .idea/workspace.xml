@@ -4,29 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Story line">
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/Facade-Factory.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Audi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/AutoFabriek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/AutoMerk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/BMW.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/BenzineAuto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/DAutoBenzine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/DAutoElektrisch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/DFabriek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/ElektrischeAuto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/FabriekManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/GAutoBenzine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/GAutoElektrisch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/GFabriek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/Facade.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/src/Audi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/src/AutoMerk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/src/BMW.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/src/FabriekManager.java" afterDir="false" />
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Operator could you pick that phone??">
+      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Blank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Green.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Facade-Factory/src/Red.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Factory/Blank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Factory/Blue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Factory/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Factory/Green.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Factory/Red.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/BenzineAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facade-Factory/src/BenzineAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/BenzineAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/BenzineAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DAutoBenzine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/ElektrischeAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/ElektrischeAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/FabriekManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +48,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="i-know-this-isnt-main-i-just-cant-prove-it" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,15 +67,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-22",
-    "last_opened_file_path": "C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ivobr\OneDrive\Bureaublad\School\Jaar 3\Her Periode 1\UML_Herkansing\Facade-Factory\src" />
@@ -134,6 +138,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="De main files miste" />
     <MESSAGE value="Story line" />
-    <option name="LAST_COMMIT_MESSAGE" value="Story line" />
+    <MESSAGE value="Operator could you pick that phone??" />
+    <option name="LAST_COMMIT_MESSAGE" value="Operator could you pick that phone??" />
   </component>
 </project>

@@ -2,6 +2,6 @@ package code.Factory;
 
 
 public interface AutoFabriek {
-    BenzineAuto createBenzineAuto();
-    ElektrischeAuto createElektrischeAuto();
+    BenzineAuto createBenzineAuto(Color kleur);
+    ElektrischeAuto createElektrischeAuto(Color kleur);
 }

@@ -1,15 +1,13 @@
 package code.Factory;
 
-import code.Factory.*;
-
 public class GFabriek implements AutoFabriek {
     @Override
-    public BenzineAuto createBenzineAuto() {
-        return new GAutoBenzine();
+    public BenzineAuto createBenzineAuto(Color kleur) {
+        return new GAutoBenzine(kleur);
     }
 
     @Override
-    public ElektrischeAuto createElektrischeAuto() {
-        return new GAutoElektrisch();
+    public ElektrischeAuto createElektrischeAuto(Color kleur) {
+        return new GAutoElektrisch(kleur);
     }
 }
