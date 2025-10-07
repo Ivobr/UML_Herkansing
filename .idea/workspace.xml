@@ -5,41 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="klant maken">
-      <change afterPath="$PROJECT_DIR$/Facade/src/AutoFabriek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/src/GAutoBenzine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/src/GAutoElektrisch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/src/GFabriek.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facade/src/Red.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Factory/Klant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/Facade-Factory.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/Audi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/AutoFabriek.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/AutoMerk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/BMW.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/BenzineAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/src/BenzineAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/Blank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/Blue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/src/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/DAutoBenzine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/DAutoElektrisch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/DFabriek.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/ElektrischeAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/src/ElektrischeAuto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/FabriekManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/GAutoBenzine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/GAutoElektrisch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/GFabriek.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/Green.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade-Factory/src/Red.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Facade/src/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Facade/src/FabriekManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Bridge/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/FabriekManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/Green.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Green.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,21 +59,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.code.Bridge.src.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "I-fucked-up",
-    "jdk.selected.JAVA_MODULE": "openjdk-22",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.code.Bridge.src.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;I-fucked-up&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ivobr\OneDrive\Bureaublad\School\Jaar 3\Her Periode 1\UML_Herkansing\Facade-Factory\src" />
@@ -178,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758794736474</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="klant maken">
+      <option name="closed" value="true" />
+      <created>1759843936518</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759843936518</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

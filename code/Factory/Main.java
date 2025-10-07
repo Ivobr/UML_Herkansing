@@ -1,6 +1,8 @@
 package code.Factory;
 
+
 public class Main{
+    public static int keuze = 0;
 
     public static FabriekManager setupG(){
 
@@ -55,6 +57,22 @@ public class Main{
         GManager.rij();
         GManager.informatie();
 
+        Klant klant = new Klant();
+        System.out.println(klant.main());
+        keuze = klant.main();
+        System.out.println("Keuze: " + keuze);
+
+
+        System.out.println("Klant wilt");
+
+        if(keuze == 1){
+            makeBenzineCar(DManager, DManager.getFabriek(), kleur);
+            DManager.informatie();
+        } else if (keuze == 2) {
+            makeBenzineCar(GManager, GManager.getFabriek(), kleur);
+            GManager.informatie();
+
+        }
 
     }
 }
