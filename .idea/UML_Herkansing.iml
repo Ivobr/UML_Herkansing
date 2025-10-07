@@ -7,7 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Facade-Factory" />
-    <orderEntry type="module" module-name="Facade-Factory" />
   </component>
 </module>

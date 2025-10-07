@@ -8,6 +8,7 @@ public class Main {
 //        BenzineAuto blankCar = new DAutoBenzine(new Blank());
         blueCar.informatie();
         System.out.println(" ");
+        blueCar.vroom();
 //        greenCar.informatie();
 //        System.out.println(" ");
 //        blueCar.informatie();

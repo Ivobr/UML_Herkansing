@@ -1,19 +1,15 @@
 package code.Factory;
-
-import code.Factory.AutoFabriek;
-import code.Factory.BenzineAuto;
-import code.Factory.ElektrischeAuto;
-
 public class FabriekManager {
+    // Fabriek niet maken maar aanroepen!
 
     private BenzineAuto benzineAuto;
     private ElektrischeAuto elektrischeAuto;
     private AutoFabriek fabriek;
-    private Color kleur;
+//    private Color kleur;
 
-    public FabriekManager(AutoFabriek fabriek, Color kleur){
+    public FabriekManager(AutoFabriek fabriek){
         this.fabriek = fabriek;
-        this.kleur = kleur;
+//        this.kleur = kleur;
     }
 
     public BenzineAuto makeBenzineAuto(AutoFabriek fabriek, Color kleur){

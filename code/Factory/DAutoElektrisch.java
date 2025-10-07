@@ -15,6 +15,7 @@ public class DAutoElektrisch implements ElektrischeAuto {
         System.out.println(" ");
         System.out.println(color.colorName());
         System.out.println("DAutoElektrisch €" + ProductiePrijs);
+        System.out.println("€" + color.prijs());
     }
 
     public DAutoElektrisch(Color color){

@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Facade/Facade.iml" filepath="$PROJECT_DIR$/Facade/Facade.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Facade-Factory/Facade-Factory.iml" filepath="$PROJECT_DIR$/Facade-Factory/Facade-Factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/UML_Herkansing.iml" filepath="$PROJECT_DIR$/.idea/UML_Herkansing.iml" />
     </modules>
   </component>

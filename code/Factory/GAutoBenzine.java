@@ -1,7 +1,5 @@
 package code.Factory;
 
-import code.Factory.BenzineAuto;
-
 public class GAutoBenzine implements BenzineAuto {
     private Color color;
     private double ProductiePrijs = 12000;
