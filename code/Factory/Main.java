@@ -64,13 +64,14 @@ public class Main{
 
 
         System.out.println("Klant wilt");
-        Color kleur = Klant.getKleur();
+        Color klantKleur = Klant.getKleur();
+        System.out.println(klantKleur);
 
         if(keuze == 1){
-            makeBenzineCar(DManager, DManager.getFabriek(), kleur);
+            makeBenzineCar(DManager, DManager.getFabriek(), klantKleur);
             DManager.informatie();
         } else if (keuze == 2) {
-            makeBenzineCar(GManager, GManager.getFabriek(), kleur);
+            makeBenzineCar(GManager, GManager.getFabriek(), klantKleur);
             GManager.informatie();
 
         } else if (keuze == 3) {

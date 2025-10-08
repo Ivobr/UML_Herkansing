@@ -1,7 +1,7 @@
 package code.Factory;
 
 public class Klant {
-    private Color kleur;
+    private static Color kleur = new Green();
     private static String soort = "Benzine";
 //    private String merk
     private static String prijsKlasse = "Duur";
@@ -10,11 +10,11 @@ public class Klant {
         int result = 0;
         switch(soort){
             case "Benzine":
-                if(prijsKlasse == "Goedkoop"){
-                    result = 2;
-                    break;
-                } else if (prijsKlasse == "Duur") {
+                if(prijsKlasse == "Duur"){
                     result = 1;
+                    break;
+                } else if (prijsKlasse == "Goedkoop") {
+                    result = 2;
                     break;
                 }
                 break;
@@ -23,7 +23,7 @@ public class Klant {
         return result;
     }
 
-    public Color getKleur() {
+    public static Color getKleur() {
         return kleur;
     }
 
