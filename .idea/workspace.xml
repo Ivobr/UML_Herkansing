@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="klant maken">
-      <change afterPath="$PROJECT_DIR$/code/Factory/Klant.java" afterDir="false" />
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="klant maken en in main wensen gebruiken opzet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Klant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759843936518</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="klant maken en in main wensen gebruiken opzet">
+      <option name="closed" value="true" />
+      <created>1759845542779</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759845542779</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +194,7 @@
     <MESSAGE value="Soortvan keuze kunnen maken welke auto je gaat maken" />
     <MESSAGE value="Nu kan je zelf auto maken Yippie" />
     <MESSAGE value="klant maken" />
-    <option name="LAST_COMMIT_MESSAGE" value="klant maken" />
+    <MESSAGE value="klant maken en in main wensen gebruiken opzet" />
+    <option name="LAST_COMMIT_MESSAGE" value="klant maken en in main wensen gebruiken opzet" />
   </component>
 </project>

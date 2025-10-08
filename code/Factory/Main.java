@@ -64,6 +64,7 @@ public class Main{
 
 
         System.out.println("Klant wilt");
+        Color kleur = Klant.getKleur();
 
         if(keuze == 1){
             makeBenzineCar(DManager, DManager.getFabriek(), kleur);
@@ -72,6 +73,10 @@ public class Main{
             makeBenzineCar(GManager, GManager.getFabriek(), kleur);
             GManager.informatie();
 
+        } else if (keuze == 3) {
+            
+        } else if (keuze == 4) {
+            
         }
 
     }

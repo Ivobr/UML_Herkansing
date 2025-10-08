@@ -22,4 +22,9 @@ public class Klant {
 
         return result;
     }
+
+    public Color getKleur() {
+        return kleur;
+    }
+
 }
