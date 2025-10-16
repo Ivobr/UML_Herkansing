@@ -4,11 +4,11 @@ public class BMW implements AutoMerk{
 
     private FabriekManager GoedkoopManager;
     private FabriekManager DuurManager;
-    private String merk = "BMW";
+    private String merkNaam = "BMW";
 
     @Override
     public String getMerk() {
-        return merk;
+        return merkNaam;
     }
 
     @Override
@@ -19,16 +19,29 @@ public class BMW implements AutoMerk{
     }
 
     @Override
-    public BenzineAuto UitstootMaken(String Klasse, Color kleur, AutoMerk merk){
-        System.out.println(merk);
-        if(Klasse == "Goedkoop"){
+    public BenzineAuto UitstootMaken(int belastingSchaal, Color kleur, AutoMerk merk){
+        if(belastingSchaal < 3){
             BenzineAuto benzineAuto = GoedkoopManager.makeBenzineAuto(GoedkoopManager.getFabriek(), kleur, merk);
             benzineAuto.informatie();
             return benzineAuto;
-        }else if (Klasse == "Duur") {
+        }else if (belastingSchaal == 3) {
             BenzineAuto benzineAuto = DuurManager.makeBenzineAuto(DuurManager.getFabriek(), kleur, merk);
             benzineAuto.informatie();
             return benzineAuto;
+        }
+        return null;
+    }
+
+    @Override
+    public ElektrischeAuto ZuinigMaken(int belastingSchaal, Color kleur, AutoMerk merk){
+        if(belastingSchaal < 3){
+            ElektrischeAuto elektrischeAuto = GoedkoopManager.makeElektrischeAuto(GoedkoopManager.getFabriek(), kleur, merk);
+            elektrischeAuto.informatie();
+            return elektrischeAuto;
+        }else if (belastingSchaal == 3) {
+            ElektrischeAuto elektrischeAuto = DuurManager.makeElektrischeAuto(DuurManager.getFabriek(), kleur, merk);
+            elektrischeAuto.informatie();
+            return elektrischeAuto;
         }
         return null;
     }

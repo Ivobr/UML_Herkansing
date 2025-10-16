@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Geen idee of het mag wat ik heb gedaan maar er is helemaal geen switch case meer nodig klant maakt de links en geeft ze gewoon door">
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Denk dat dit wel mag gaat nu via main">
+      <change afterPath="$PROJECT_DIR$/code/Factory/Ford.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Audi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Audi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/AutoMerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/AutoMerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/BMW.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/BMW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/FabriekManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GFabriek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Klant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UML_Herkansing/code/Factory/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UML_Herkansing/code/Factory/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760626996802</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Denk dat dit wel mag gaat nu via main">
+      <option name="closed" value="true" />
+      <created>1760627295900</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1760627295900</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +261,7 @@
     <MESSAGE value="MErge?!?!" />
     <MESSAGE value="Update naar main code Want zal op verkeerde branch oopsie" />
     <MESSAGE value="Geen idee of het mag wat ik heb gedaan maar er is helemaal geen switch case meer nodig klant maakt de links en geeft ze gewoon door" />
-    <option name="LAST_COMMIT_MESSAGE" value="Geen idee of het mag wat ik heb gedaan maar er is helemaal geen switch case meer nodig klant maakt de links en geeft ze gewoon door" />
+    <MESSAGE value="Denk dat dit wel mag gaat nu via main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Denk dat dit wel mag gaat nu via main" />
   </component>
 </project>

@@ -25,13 +25,63 @@ public class Dealer {
         System.out.println("Kleur, soort, merk: " + ElektrischeAutos);
     }
 
-    public void makeBenzineCar(String klasse, AutoMerk autoMerk, Color kleur){
+    public void makeBenzineCar(int belastinSchaal, AutoMerk autoMerk, Color kleur){
 
-        BenzineAuto newCar = bmw.UitstootMaken(klasse, kleur, autoMerk);
+        String merk = autoMerk.getMerk();
+        switch(merk){
+            case "Audi":
+                BenzineAuto newAudi = audi.UitstootMaken(belastinSchaal, kleur, autoMerk);
+                BenzineAutos.add(newAudi);
+                break;
+            case "Ford":
+                BenzineAuto newFord = ford.UitstootMaken(belastinSchaal, kleur, autoMerk);
+                BenzineAutos.add(newFord);
+                break;
+            case "BMW":
+                BenzineAuto newBMW = bmw.UitstootMaken(belastinSchaal, kleur, autoMerk);
+                BenzineAutos.add(newBMW);
+                break;
+        }
 
-        System.out.println("Holy fuck first try, ");
-        BenzineAutos.add(newCar);
         BenzineAuto BenzineAutoB = BenzineAutos.get(0);
         BenzineAutoB.informatie();
+    }
+
+    public void makeElektrischeAuto(int belastinSchaal, AutoMerk autoMerk, Color kleur){
+        String merk = autoMerk.getMerk();
+
+        switch(merk){
+            case "Audi":
+                ElektrischeAuto newAudi = audi.ZuinigMaken(belastinSchaal, kleur, autoMerk);
+                ElektrischeAutos.add(newAudi);
+                break;
+            case "Ford":
+                ElektrischeAuto newFord = ford.ZuinigMaken(belastinSchaal, kleur, autoMerk);
+                ElektrischeAutos.add(newFord);
+                break;
+            case "BMW":
+                ElektrischeAuto newBMW = bmw.ZuinigMaken(belastinSchaal, kleur, autoMerk);
+                ElektrischeAutos.add(newBMW);
+                break;
+        }
+        ElektrischeAuto elek = ElektrischeAutos.getFirst();
+        elek.informatie();
+    }
+
+    public ElektrischeAuto getFirstE(){
+        if(!ElektrischeAutos.isEmpty()){
+            ElektrischeAuto Verkoop =  ElektrischeAutos.getFirst();
+            ElektrischeAutos.removeFirst();
+            return Verkoop;
+        }
+        return null;
+    }
+    public BenzineAuto getFirstB(){
+        if(!BenzineAutos.isEmpty()){
+            BenzineAuto verkoop = BenzineAutos.getFirst();
+            BenzineAutos.removeFirst();
+            return verkoop;
+        }
+        return null;
     }
 }

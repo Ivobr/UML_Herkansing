@@ -7,7 +7,7 @@ public class DFabriek implements AutoFabriek {
     }
 
     @Override
-    public ElektrischeAuto createElektrischeAuto(Color kleur) {
-        return new DAutoElektrisch(kleur);
+    public ElektrischeAuto createElektrischeAuto(Color kleur, AutoMerk merk) {
+        return new DAutoElektrisch(kleur, merk);
     }
 }

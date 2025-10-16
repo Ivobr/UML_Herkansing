@@ -29,3 +29,6 @@ Die worden gemaakt in een fabriek.
 Het gaat niet meer fout.
 
 De bridge zit nu vast eraan via de main eff een kleur mee geven via ``Color kleur = new *Gekozen kleur*();``
+
+
+Bro shit is bijna klaar misschien die strat nog maar ik ben er oprecht wel klaar mee

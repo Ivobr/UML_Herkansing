@@ -7,7 +7,7 @@ public class GFabriek implements AutoFabriek {
     }
 
     @Override
-    public ElektrischeAuto createElektrischeAuto(Color kleur) {
-        return new GAutoElektrisch(kleur);
+    public ElektrischeAuto createElektrischeAuto(Color kleur, AutoMerk merk) {
+        return new GAutoElektrisch(kleur, merk);
     }
 }

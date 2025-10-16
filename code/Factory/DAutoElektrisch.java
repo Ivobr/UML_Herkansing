@@ -3,6 +3,7 @@ package code.Factory;
 public class DAutoElektrisch implements ElektrischeAuto {
 
     private Color color;
+    private AutoMerk merk;
     private double ProductiePrijs = 120000;
 
     @Override
@@ -14,12 +15,14 @@ public class DAutoElektrisch implements ElektrischeAuto {
     public void informatie(){
         System.out.println(" ");
         System.out.println(color.colorName());
+        System.out.println(merk.getMerk());
         System.out.println("DAutoElektrisch €" + ProductiePrijs);
         System.out.println("€" + color.prijs());
     }
 
-    public DAutoElektrisch(Color color){
+    public DAutoElektrisch(Color color, AutoMerk merk){
         this.color = color;
+        this.merk = merk;
         ProductiePrijs += color.prijs();
     }
 }

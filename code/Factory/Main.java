@@ -1,17 +1,23 @@
 package code.Factory;
 
+import java.util.LinkedList;
+
 public class Main{
     public static int keuze = 0;
     public static AutoMerk bmw;
     public static AutoMerk audi;
     public static AutoMerk ford;
+    public static Dealer dealership;
+
 
     public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager){
-        Dealer dealership = new Dealer();
+        dealership = new Dealer();
         bmw = new BMW();
         audi = new Audi();
-        ford = new BMW();
+        ford = new Ford();
         bmw.setManagers(GManager, DManager);
+        audi.setManagers(GManager, DManager);
+        ford.setManagers(GManager, DManager);
 
         dealership.SetMerken(bmw, audi, ford);
         return dealership;
@@ -40,71 +46,73 @@ public class Main{
     }
 
 
-
-    public static ElektrischeAuto makeElektrischeAuto(FabriekManager fabriekManager, AutoFabriek fabriek, Color kleur){
-        ElektrischeAuto newECar = fabriekManager.makeElektrischeAuto(fabriek, kleur);
-        return newECar;
-    }
-
-
     public static void main(String[] args){
+        LinkedList<Klant> klanten = new LinkedList<Klant>();
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
         Dealer dealership = setupDealer(GManager, DManager);
 
 
-        Color kleuren = new Green();
-        Klant klant = new Klant(kleuren, audi);
-        AutoMerk merk = klant.getMerk();
+        Color Groen = new Green();
+        Color Rood = new Red();
+        Color Blauw = new Blue();
+        Color geen = new Blank();
 
-        Color kleur = klant.getKleur();
 
-        dealership.makeBenzineCar(klant.getPrijsklasse(), merk, kleur);
+        Klant klant = new Klant(Groen, audi, "FVD", 1);
+        klanten.add(klant);
+
+        Klant klant1 = new Klant(Rood, ford, "Groen Links", 3);
+        klanten.add(klant1);
+
+        Klant klant2 = new Klant(geen, bmw, "FVD", 2);
+        klanten.add(klant2);
+
+        System.out.println(klanten);
+
+
+
+//        System.out.println(klanten);
+        int size = klanten.size();
+        for(int i = 0; i < size; i++){
+            System.out.println(i);
+
+            Klant geholpen = klanten.get(i);
+
+            System.out.println(geholpen);
+            AutoMerk merk = geholpen.getMerk();
+
+            Color kleur = geholpen.getKleur();
+            String type = geholpen.getGekozenPartij();
+            int belastingSchaal = geholpen.getBelastingSchaal();
+            System.out.println(type);
+            if(type == "Groen Links"){
+                dealership.makeElektrischeAuto(belastingSchaal, merk, kleur);
+            }else if (type == "FVD"){
+                dealership.makeBenzineCar(belastingSchaal, merk, kleur);
+            }
+
+        }
+
         dealership.WhatForSale();
+        verkoop(klanten);
 
-//
-//
-//        //Die cheap ass manager denkt yusu eff waggie te maken
-//        makeBenzineCar(GManager, GManager.getFabriek(), kleur);
-//        makeElektrischeAuto(GManager, GManager.getFabriek(), kleur);
-//
-//        Color kleur2 = new Blank();
-//        //Deze getalenteerde jongen man is zich aan het voorbereiden een elegante auto te maken van een zeer hoge kwaliteit
-//        //Deze auto zal onder geen enkele voorwaarden in de handen komen van D4VD en er zal geen dode 15 jarige in komen te liggen
-//        makeBenzineCar(DManager, DManager.getFabriek(), kleur2);
-//        makeElektrischeAuto(DManager, DManager.getFabriek(), kleur2);
-//        dealership.WhatForSale();
-//
-//
-//        GManager.informatie();
-//        System.out.println("Dure auto doet");
-//        GManager.rij();
-//        GManager.informatie();
-//
-//        Klant klant = new Klant();
-//        System.out.println(klant.main());
-//        keuze = klant.main();
-//        System.out.println("Keuze: " + keuze);
-//
-//
-//        System.out.println("Klant wilt");
-//        Color klantKleur = Klant.getKleur();
-//        System.out.println(klantKleur);
-//
-//        if(keuze == 1){
-//            makeBenzineCar(DManager, DManager.getFabriek(), klantKleur);
-//            DManager.informatie();
-//        } else if (keuze == 2) {
-//            makeBenzineCar(GManager, GManager.getFabriek(), klantKleur);
-//            GManager.informatie();
-//
-//        } else if (keuze == 3) {
-//            makeElektrischeAuto(DManager, DManager.getFabriek(), klantKleur);
-//            DManager.informatie();
-//        } else if (keuze == 4) {
-//            makeElektrischeAuto(GManager, GManager.getFabriek(), klantKleur);
-//            GManager.informatie();
-//        }
+    }
 
+    public static void verkoop(LinkedList<Klant> klanten){
+        int size = klanten.size();
+        for(int i = 0; i < size; i++){
+            Klant verkopen = klanten.get(i);
+            String soort = verkopen.getGekozenPartij();
+            int schaal = verkopen.getBelastingSchaal();
+            if(soort == "Groen Links"){
+                ElektrischeAuto verkoop = dealership.getFirstE();
+                verkopen.buyCar(verkoop);
+            }else if (soort == "FVD"){
+                BenzineAuto verkoop = dealership.getFirstB();
+                verkopen.buyCar(verkoop);
+
+            }
+        }
     }
 }

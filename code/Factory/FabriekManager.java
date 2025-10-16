@@ -16,8 +16,8 @@ public class FabriekManager {
         return benzineAuto;
     }
 
-    public ElektrischeAuto makeElektrischeAuto(AutoFabriek fabriek, Color kleur){
-        this.elektrischeAuto = fabriek.createElektrischeAuto(kleur);
+    public ElektrischeAuto makeElektrischeAuto(AutoFabriek fabriek, Color kleur, AutoMerk merk){
+        this.elektrischeAuto = fabriek.createElektrischeAuto(kleur, merk);
         System.out.println("Elektrische auto gemaakt");
 //        elektrischeAuto.informatie();
         return elektrischeAuto;
