@@ -5,11 +5,8 @@ public class FabriekManager {
     private BenzineAuto benzineAuto;
     private ElektrischeAuto elektrischeAuto;
     private AutoFabriek fabriek;
-//    private Color kleur;
-
     public FabriekManager(AutoFabriek fabriek){
         this.fabriek = fabriek;
-//        this.kleur = kleur;
     }
 
     public BenzineAuto makeBenzineAuto(AutoFabriek fabriek, Color kleur){

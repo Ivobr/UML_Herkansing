@@ -4,6 +4,11 @@ package code.Factory;
 public class Main{
     public static int keuze = 0;
 
+    public static Dealer setupDealer(){
+        Dealer dealership = new Dealer();
+        return dealership;
+    }
+
     public static FabriekManager setupG(){
 
         AutoFabriek GFabriek = new GFabriek();
@@ -39,7 +44,13 @@ public class Main{
     public static void main(String[] args){
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
+        Dealer dealership = setupDealer();
+
         Color kleur = new Blue();
+        dealership.makeBenzineCar(GManager, GManager.getFabriek(), kleur);
+
+
+
 
         //Die cheap ass manager denkt yusu eff waggie te maken
         makeBenzineCar(GManager, GManager.getFabriek(), kleur);
@@ -50,6 +61,7 @@ public class Main{
         //Deze auto zal onder geen enkele voorwaarden in de handen komen van D4VD en er zal geen dode 15 jarige in komen te liggen
         makeBenzineCar(DManager, DManager.getFabriek(), kleur2);
         makeElektrischeAuto(DManager, DManager.getFabriek(), kleur2);
+        dealership.WhatForSale();
 
 
         GManager.informatie();
@@ -75,9 +87,11 @@ public class Main{
             GManager.informatie();
 
         } else if (keuze == 3) {
-            
+            makeElektrischeAuto(DManager, DManager.getFabriek(), klantKleur);
+            DManager.informatie();
         } else if (keuze == 4) {
-            
+            makeElektrischeAuto(GManager, GManager.getFabriek(), klantKleur);
+            GManager.informatie();
         }
 
     }

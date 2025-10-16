@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="klant maken en in main wensen gebruiken opzet">
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Kleur meegeven vanuit Klant.java">
+      <change afterPath="$PROJECT_DIR$/code/Factory/Dealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/FabriekManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Klant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/WitWassen/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/WitWassen/Klant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +74,7 @@
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -169,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759903540742</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Kleur meegeven vanuit Klant.java">
+      <option name="closed" value="true" />
+      <created>1759903805076</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759903805076</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +214,7 @@
     <MESSAGE value="Nu kan je zelf auto maken Yippie" />
     <MESSAGE value="klant maken" />
     <MESSAGE value="klant maken en in main wensen gebruiken opzet" />
-    <option name="LAST_COMMIT_MESSAGE" value="klant maken en in main wensen gebruiken opzet" />
+    <MESSAGE value="Kleur meegeven vanuit Klant.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kleur meegeven vanuit Klant.java" />
   </component>
 </project>

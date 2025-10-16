@@ -18,6 +18,14 @@ public class Klant {
                     break;
                 }
                 break;
+            case "Elektrisch":
+                if(prijsKlasse == "Duur"){
+                    result = 3;
+                    break;
+                }else if(prijsKlasse == "Goedkoop"){
+                    result = 4;
+                    break;
+                }
         }
 
         return result;

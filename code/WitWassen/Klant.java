@@ -11,7 +11,7 @@
 //        switch(soort){
 //            case "Benzine":
 //                if(prijsklasse == "Duur"){
-//                    new DAutoBenzine
+//                    new DAutoBenzine --> return naar main met int waarde
 //                } else if (prijsklasse == "Goedkoop") {
 //                    new GAutoBenzine
 //                }
@@ -37,6 +37,14 @@
 ////                    new GAutoElektrisch(color, automerk)
 //                }
 //                break;
+//        }
+//
+//        public static Color getKleur(){
+//            return kleur;
+//        }
+//
+//        public static Merk getMerk(){
+//            return Merk;
 //        }
 //    }
 //}
