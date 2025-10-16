@@ -7,9 +7,9 @@ public class Main{
     public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager){
         Dealer dealership = new Dealer();
         AutoMerk bmw = new BMW();
+        bmw.setManagers(GManager, DManager);
 
-
-        dealership.SetMerken(bmw, GManager, DManager);
+        dealership.SetMerken(bmw);
         return dealership;
     }
 

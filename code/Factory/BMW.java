@@ -24,6 +24,11 @@ public class BMW implements AutoMerk{
         if(Klasse == "Goedkoop"){
             BenzineAuto benzineAuto = GoedkoopManager.makeBenzineAuto(GoedkoopManager.getFabriek(), kleur);
             benzineAuto.informatie();
+            return benzineAuto;
+        }else if (Klasse == "Duur") {
+            BenzineAuto benzineAuto = DuurManager.makeBenzineAuto(DuurManager.getFabriek(), kleur);
+            benzineAuto.informatie();
+            return benzineAuto;
         }
 
         return benzineAuto;
