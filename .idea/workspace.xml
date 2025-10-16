@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="MErge?!?!">
-      <change afterPath="$PROJECT_DIR$/code/Factory/AutoMerk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/Factory/BMW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UML_Herkansing/code/Factory/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UML_Herkansing/code/Factory/readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="MErge?!?!" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +63,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "I-fucked-up",
     "jdk.selected.JAVA_MODULE": "openjdk-22",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing",
@@ -103,6 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
