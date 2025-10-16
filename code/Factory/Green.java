@@ -1,9 +1,12 @@
 package code.Factory;
 
+import java.util.Random;
+
 public class Green implements Color{
     private String color = "Green";
 
-    private int prijs = 400;
+    private Random Rprijs =new Random();
+    private int prijs = Rprijs.nextInt(10000);
 
     @Override
     public String colorName() {

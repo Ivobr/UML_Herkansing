@@ -1,6 +1,5 @@
 package code.Factory;
 
-import code.Factory.ElektrischeAuto;
 
 public class GAutoElektrisch implements ElektrischeAuto {
 
@@ -15,6 +14,7 @@ public class GAutoElektrisch implements ElektrischeAuto {
 
     @Override
     public void informatie(){
+        System.out.println(" ");
         System.out.println(color.colorName());
         System.out.println("GAutoElektrisch €" + ProductiePrijs);
     }

@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Operator could you pick that phone??">
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Kleur meegeven vanuit Klant.java">
+      <change afterPath="$PROJECT_DIR$/code/Factory/Dealer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/FabriekManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Klant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Factory/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/WitWassen/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/WitWassen/Klant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ivobr&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ivobr/UML_Herkansing.git&quot;,
+    &quot;accountId&quot;: &quot;29c191fb-a4b0-4910-9676-94b24173061b&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/code/Factory/Main.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -47,11 +64,17 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.code.Bridge.src.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;I-fucked-up&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-22&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivobr/OneDrive/Bureaublad/School/Jaar 3/Her Periode 1/UML_Herkansing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -61,6 +84,28 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="code.Factory.Main" />
+      <module name="UML_Herkansing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="code.Factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,15 +132,55 @@
       <option name="project" value="LOCAL" />
       <updated>1758614288020</updated>
     </task>
-    <task id="LOCAL-00003" summary="Operator could you pick that phone??">
+    <task id="LOCAL-00003" summary="Soortvan keuze kunnen maken welke auto je gaat maken">
       <option name="closed" value="true" />
-      <created>1758785371215</created>
+      <created>1758794173026</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1758785371215</updated>
+      <updated>1758794173026</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Nu kan je zelf auto maken Yippie">
+      <option name="closed" value="true" />
+      <created>1758794736474</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758794736474</updated>
+    </task>
+    <task id="LOCAL-00005" summary="klant maken">
+      <option name="closed" value="true" />
+      <created>1759843936518</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759843936518</updated>
+    </task>
+    <task id="LOCAL-00006" summary="klant maken en in main wensen gebruiken opzet">
+      <option name="closed" value="true" />
+      <created>1759845542779</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759845542779</updated>
+    </task>
+    <task id="LOCAL-00007" summary="klant maken en in main wensen gebruiken opzet">
+      <option name="closed" value="true" />
+      <created>1759903540742</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1759903540742</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Kleur meegeven vanuit Klant.java">
+      <option name="closed" value="true" />
+      <created>1759903805076</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759903805076</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,7 +194,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="I-fucked-up" />
                       </list>
                     </value>
                   </entry>
@@ -125,6 +210,11 @@
     <MESSAGE value="De main files miste" />
     <MESSAGE value="Story line" />
     <MESSAGE value="Operator could you pick that phone??" />
-    <option name="LAST_COMMIT_MESSAGE" value="Operator could you pick that phone??" />
+    <MESSAGE value="Soortvan keuze kunnen maken welke auto je gaat maken" />
+    <MESSAGE value="Nu kan je zelf auto maken Yippie" />
+    <MESSAGE value="klant maken" />
+    <MESSAGE value="klant maken en in main wensen gebruiken opzet" />
+    <MESSAGE value="Kleur meegeven vanuit Klant.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kleur meegeven vanuit Klant.java" />
   </component>
 </project>
