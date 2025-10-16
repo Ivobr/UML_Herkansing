@@ -1,36 +1,14 @@
 package code.Factory;
 
 public class Klant {
-    private static Color kleur = new Green();
-    private static AutoMerk merk = new Audi();
-    private static String soort = "Benzine";
+    private static Color kleur;
+    private static AutoMerk merk;
     private static String prijsKlasse = "Goedkoop";
 
-    public static int main(){
-        int result = 0;
-        switch(soort){
-            case "Benzine":
-                if(prijsKlasse == "Duur"){
-                    result = 1;
-                    break;
-                } else if (prijsKlasse == "Goedkoop") {
-                    result = 2;
-                    break;
-                }
-                break;
-            case "Elektrisch":
-                if(prijsKlasse == "Duur"){
-                    result = 3;
-                    break;
-                }else if(prijsKlasse == "Goedkoop"){
-                    result = 4;
-                    break;
-                }
-        }
-
-        return result;
+    public Klant(Color kleur, AutoMerk merk){
+        this.kleur = kleur;
+        this.merk = merk;
     }
-
     public static Color getKleur() {
         return kleur;
     }

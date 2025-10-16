@@ -2,12 +2,15 @@ package code.Factory;
 
 public class Main{
     public static int keuze = 0;
+    public static AutoMerk bmw;
+    public static AutoMerk audi;
+    public static AutoMerk ford;
 
     public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager){
         Dealer dealership = new Dealer();
-        AutoMerk bmw = new BMW();
-        AutoMerk audi = new Audi();
-        AutoMerk ford = new BMW();
+        bmw = new BMW();
+        audi = new Audi();
+        ford = new BMW();
         bmw.setManagers(GManager, DManager);
 
         dealership.SetMerken(bmw, audi, ford);
@@ -48,8 +51,10 @@ public class Main{
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
         Dealer dealership = setupDealer(GManager, DManager);
-        Klant klant = new Klant();
 
+
+        Color kleuren = new Green();
+        Klant klant = new Klant(kleuren, audi);
         AutoMerk merk = klant.getMerk();
 
         Color kleur = klant.getKleur();
