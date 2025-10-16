@@ -41,6 +41,7 @@ public class Main{
         return newECar;
     }
 
+
     public static void main(String[] args){
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
