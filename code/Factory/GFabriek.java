@@ -2,8 +2,8 @@ package code.Factory;
 
 public class GFabriek implements AutoFabriek {
     @Override
-    public BenzineAuto createBenzineAuto(Color kleur) {
-        return new GAutoBenzine(kleur);
+    public BenzineAuto createBenzineAuto(Color kleur, AutoMerk merk) {
+        return new GAutoBenzine(kleur, merk);
     }
 
     @Override

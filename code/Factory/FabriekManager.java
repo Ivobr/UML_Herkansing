@@ -9,8 +9,8 @@ public class FabriekManager {
         this.fabriek = fabriek;
     }
 
-    public BenzineAuto makeBenzineAuto(AutoFabriek fabriek, Color kleur){
-        this.benzineAuto = fabriek.createBenzineAuto(kleur);
+    public BenzineAuto makeBenzineAuto(AutoFabriek fabriek, Color kleur, AutoMerk merk){
+        this.benzineAuto = fabriek.createBenzineAuto(kleur, merk);
         System.out.println("Benzine auto gemaakt");
 //        benzineAuto.informatie();
         return benzineAuto;

@@ -2,9 +2,9 @@ package code.Factory;
 
 public class Klant {
     private static Color kleur = new Green();
+    private static AutoMerk merk = new Audi();
     private static String soort = "Benzine";
-//    private String merk
-    private static String prijsKlasse = "Duur";
+    private static String prijsKlasse = "Goedkoop";
 
     public static int main(){
         int result = 0;
@@ -35,4 +35,11 @@ public class Klant {
         return kleur;
     }
 
+    public String getPrijsklasse(){
+        return prijsKlasse;
+    }
+
+    public AutoMerk getMerk(){
+        return merk;
+    }
 }

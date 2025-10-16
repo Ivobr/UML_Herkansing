@@ -6,9 +6,11 @@ public class Main{
     public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager){
         Dealer dealership = new Dealer();
         AutoMerk bmw = new BMW();
+        AutoMerk audi = new Audi();
+        AutoMerk ford = new BMW();
         bmw.setManagers(GManager, DManager);
 
-        dealership.SetMerken(bmw);
+        dealership.SetMerken(bmw, audi, ford);
         return dealership;
     }
 
@@ -34,10 +36,7 @@ public class Main{
        return DManager;
     }
 
-    public static BenzineAuto makeBenzineCar(FabriekManager fabriekManager, AutoFabriek fabriek, Color kleur){
-        BenzineAuto newCar = fabriekManager.makeBenzineAuto(fabriek, kleur);
-        return newCar;
-    }
+
 
     public static ElektrischeAuto makeElektrischeAuto(FabriekManager fabriekManager, AutoFabriek fabriek, Color kleur){
         ElektrischeAuto newECar = fabriekManager.makeElektrischeAuto(fabriek, kleur);
@@ -49,10 +48,14 @@ public class Main{
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
         Dealer dealership = setupDealer(GManager, DManager);
+        Klant klant = new Klant();
 
-        Color kleur = new Blue();
+        AutoMerk merk = klant.getMerk();
 
-        dealership.makeBenzineCar(dealership.bmw, kleur);
+        Color kleur = klant.getKleur();
+
+        dealership.makeBenzineCar(klant.getPrijsklasse(), merk, kleur);
+        dealership.WhatForSale();
 
 //
 //

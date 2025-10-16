@@ -1,10 +1,10 @@
 package code.Factory;
 
-public class BMW implements AutoMerk{
+public class Audi implements AutoMerk{
 
     private FabriekManager GoedkoopManager;
     private FabriekManager DuurManager;
-    private String merk = "BMW";
+    private String merk = "Audi";
 
     @Override
     public String getMerk() {

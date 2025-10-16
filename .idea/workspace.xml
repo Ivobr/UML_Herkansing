@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="MErge?!?!" />
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Update naar main code Want zal op verkeerde branch oopsie">
+      <change afterPath="$PROJECT_DIR$/code/Factory/Audi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/AutoMerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/AutoMerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/BMW.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/BMW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DAutoBenzine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/DFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/FabriekManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/GFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Klant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -182,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760616529397</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update naar main code Want zal op verkeerde branch oopsie">
+      <option name="closed" value="true" />
+      <created>1760622422048</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1760622422048</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +240,7 @@
     <MESSAGE value="klant maken en in main wensen gebruiken opzet" />
     <MESSAGE value="Kleur meegeven vanuit Klant.java" />
     <MESSAGE value="MErge?!?!" />
-    <option name="LAST_COMMIT_MESSAGE" value="MErge?!?!" />
+    <MESSAGE value="Update naar main code Want zal op verkeerde branch oopsie" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update naar main code Want zal op verkeerde branch oopsie" />
   </component>
 </project>
