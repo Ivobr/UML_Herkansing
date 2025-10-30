@@ -3,7 +3,6 @@ package code;
 import java.util.ArrayList;
 
 public class Dealer {
-    public String type = "Opium";
     ArrayList<BenzineAuto> BenzineAutos = new ArrayList<BenzineAuto>();
     ArrayList<ElektrischeAuto> ElektrischeAutos = new ArrayList<>();
     AutoMerk bmw;
@@ -11,7 +10,6 @@ public class Dealer {
     AutoMerk ford;
 
     public Dealer(){
-        System.out.println(type);
     }
 
     public void SetMerken(AutoMerk bmws, AutoMerk audis, AutoMerk fords){

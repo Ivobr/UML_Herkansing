@@ -27,14 +27,6 @@ public class FabriekManager {
         return fabriek;
     }
 
-    public void rij(){
-        if(benzineAuto != null) {
-            benzineAuto.vroom();
-        }
-        if(elektrischeAuto != null) {
-            elektrischeAuto.zoom();
-        }
-    }
 
     public void informatie(){
         if(benzineAuto != null) {
