@@ -39,7 +39,7 @@ public class Main{
        AutoFabriek DFabriek = new DFabriek();
        FabriekManager DManager = new FabriekManager(DFabriek);
 
-       System.out.println("Dure fabriek runt");
+       System.out.println("Dure fAbrIek runt");
        System.out.println(" ");
 
        return DManager;
@@ -80,10 +80,11 @@ public class Main{
             Klant geholpen = klanten.get(i);
 
             System.out.println(geholpen);
-            AutoMerk merk = geholpen.getMerk();
 
+            AutoMerk merk = geholpen.getMerk();
             Color kleur = geholpen.getKleur();
             String type = geholpen.getGekozenPartij();
+
             int belastingSchaal = geholpen.getBelastingSchaal();
             System.out.println(type);
             if(type == "Groen Links"){
