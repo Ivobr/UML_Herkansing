@@ -4,8 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Gesproken">
-      <change beforePath="$PROJECT_DIR$/code/Factory/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Factory/Klant.java" afterDir="false" />
+    <list default="true" id="4e00fc35-bbfd-40bc-bb6d-8b4736e75531" name="Changes" comment="Ieuw GroenLinks">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/Facade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/Audi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/AutoFabriek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/AutoMerk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/BMW.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/BenzineAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/BenzineAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/ElektrischeAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ElektrischeAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/FabriekManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/GAutoBenzine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/GAutoElektrisch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/GFabriek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Facade/src/Red.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/Bridge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/BenzineAuto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Blank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Blue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Color.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/DAutoBenzine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Green.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/Red.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Bridge/src/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Audi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Audi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/AutoFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/AutoFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/AutoMerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/AutoMerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/BMW.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/BMW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/BenzineAuto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Blank.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Blank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Blue.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Blue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Color.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/DAutoBenzine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/DAutoElektrisch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/DFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/DFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Dealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/ElektrischeAuto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/FabriekManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/FabriekManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Ford.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Ford.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoBenzine.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/GAutoBenzine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GAutoElektrisch.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/GAutoElektrisch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/GFabriek.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/GFabriek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Green.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Green.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Klant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Klant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/Red.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/Red.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/code/code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/Factory/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/code/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/WitWassen/Klant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/BenzineAuto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/Blank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/Blue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/Color.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/DAutoBenzine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/Green.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/Red.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/Bridge/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/code/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/code/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/out/production/code/code/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UML_Herkansing/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UML_Herkansing/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UML_Herkansing/code/Bridge/src/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UML_Herkansing/code/Factory/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UML_Herkansing/code/out/production/Bridge/readme.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +161,11 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-22" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="code.Factory.Main" />
+      <option name="MAIN_CLASS_NAME" value="code.Main" />
       <module name="UML_Herkansing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="code.Factory.*" />
+          <option name="PATTERN" value="code.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -218,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761814392526</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Ieuw GroenLinks">
+      <option name="closed" value="true" />
+      <created>1761814527035</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1761814527035</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +343,7 @@
     <MESSAGE value="Geen idee of het mag wat ik heb gedaan maar er is helemaal geen switch case meer nodig klant maakt de links en geeft ze gewoon door" />
     <MESSAGE value="Denk dat dit wel mag gaat nu via main" />
     <MESSAGE value="Gesproken" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gesproken" />
+    <MESSAGE value="Ieuw GroenLinks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ieuw GroenLinks" />
   </component>
 </project>
