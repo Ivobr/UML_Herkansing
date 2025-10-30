@@ -6,7 +6,7 @@ public class Klant {
     private Color kleur;
     private AutoMerk merk;
     private int belastingSchaal;
-    private String GekozenPartij = "Groen links";
+    private String GekozenPartij;
     private LinkedList<Object> autos = new LinkedList<>();
 
     public Klant(Color kleur, AutoMerk merk, String gekozenPartij, int BelastingSchaal){
