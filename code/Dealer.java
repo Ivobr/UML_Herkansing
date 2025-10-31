@@ -8,7 +8,7 @@ public class Dealer {
     AutoMerk bmw;
     AutoMerk audi;
     AutoMerk ford;
-    Currency converter = new Currency();
+    Currency converter;
     private String land;
 
     public Dealer(){
@@ -19,7 +19,9 @@ public class Dealer {
         this.land = land;
     }
 
-
+    public void setConverter(Currency converter){
+        this.converter = converter;
+    }
 
     public void SetMerken(AutoMerk bmws, AutoMerk audis, AutoMerk fords){
 

@@ -1,7 +1,7 @@
 package code;
 
 import java.util.LinkedList;
-
+import java.util.Random;
 public class Main{
     public static int keuze = 0;
     public static AutoMerk bmw;
@@ -10,7 +10,7 @@ public class Main{
     public static Dealer dealership;
 
 
-    public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager){
+    public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager, Currency converter){
         dealership = new Dealer();
         bmw = new BMW();
         audi = new Audi();
@@ -18,7 +18,7 @@ public class Main{
         bmw.setManagers(GManager, DManager);
         audi.setManagers(GManager, DManager);
         ford.setManagers(GManager, DManager);
-
+        dealership.setConverter(converter);
         dealership.SetMerken(bmw, audi, ford);
         dealership.setLand("USA");
         return dealership;
@@ -45,13 +45,23 @@ public class Main{
 
        return DManager;
     }
-
+    public static Currency setupexchange() { 
+        Random random = new Random();
+        if (random.nextInt(2) == 0 ){
+            System.out.println("Dealer kiest voor scam currency");
+            Currency converter = new ScamCurrency();
+            return converter;
+        }
+        Currency converter = new LegitCurrency();
+        return converter;
+    }
 
     public static void main(String[] args){
         LinkedList<Klant> klanten = new LinkedList<Klant>();
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
-        Dealer dealership = setupDealer(GManager, DManager);
+        Currency converter = setupexchange();
+        Dealer dealership = setupDealer(GManager, DManager, converter);
 
 
         Color Groen = new Green();
