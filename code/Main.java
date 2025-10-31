@@ -20,6 +20,7 @@ public class Main{
         ford.setManagers(GManager, DManager);
 
         dealership.SetMerken(bmw, audi, ford);
+        dealership.setLand("USA");
         return dealership;
     }
 
@@ -78,13 +79,12 @@ public class Main{
             System.out.println(i);
 
             Klant geholpen = klanten.get(i);
-
-            System.out.println(geholpen);
-
+            System.out.println("Klant " + (i + 1) + " heeft gekozen:");
+           
             AutoMerk merk = geholpen.getMerk();
             Color kleur = geholpen.getKleur();
             String type = geholpen.getGekozenPartij();
-
+            System.out.println( "Merk: " + merk + ", Kleur: " + kleur + ", Partij: " + type);
             int belastingSchaal = geholpen.getBelastingSchaal();
             System.out.println(type);
             if(type == "Groen Links"){
