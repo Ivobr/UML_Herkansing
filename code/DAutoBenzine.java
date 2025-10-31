@@ -22,5 +22,12 @@ public class DAutoBenzine implements BenzineAuto {
         this.color = color;
         this.merk = merk;
         ProductiePrijs += color.prijs();
+
+        
     }
+    @Override
+    public double getprijs() {
+        return ProductiePrijs;
+    }
+    
 }

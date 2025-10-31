@@ -22,4 +22,9 @@ public class GAutoBenzine implements BenzineAuto {
         this.merk = merk;
         ProductiePrijs += color.prijs();
     }
+    @Override
+    public double getprijs() {
+        return ProductiePrijs;
+    }
+    
 }

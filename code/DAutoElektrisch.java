@@ -25,4 +25,8 @@ public class DAutoElektrisch implements ElektrischeAuto {
         this.merk = merk;
         ProductiePrijs += color.prijs();
     }
+    @Override
+    public double getprijs() {
+        return ProductiePrijs;
+    }
 }

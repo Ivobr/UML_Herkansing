@@ -10,7 +10,7 @@ public class Main{
     public static Dealer dealership;
 
 
-    public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager){
+    public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager, Bank bank){
         dealership = new Dealer();
         bmw = new BMW();
         audi = new Audi();
@@ -18,6 +18,7 @@ public class Main{
         bmw.setManagers(GManager, DManager);
         audi.setManagers(GManager, DManager);
         ford.setManagers(GManager, DManager);
+        dealership.setBank(bank);
 
         dealership.SetMerken(bmw, audi, ford);
         return dealership;
@@ -50,7 +51,7 @@ public class Main{
         LinkedList<Klant> klanten = new LinkedList<Klant>();
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
-        Dealer dealership = setupDealer(GManager, DManager);
+        Dealer dealership = setupDealer(GManager, DManager, new Bank());
 
 
         Color Groen = new Green();
@@ -59,13 +60,13 @@ public class Main{
         Color geen = new Blank();
 
 
-        Klant klant = new Klant(Groen, audi, "FVD", 1);
+        Klant klant = new Klant(Groen, audi, "FVD", 1, "USA");
         klanten.add(klant);
 
-        Klant klant1 = new Klant(Rood, ford, "Groen Links", 3);
+        Klant klant1 = new Klant(Rood, ford, "Groen Links", 3, "UK");
         klanten.add(klant1);
 
-        Klant klant2 = new Klant(geen, bmw, "FVD", 2);
+        Klant klant2 = new Klant(geen, bmw, "FVD", 2, "USA");
         klanten.add(klant2);
 
         System.out.println(klanten);
@@ -108,10 +109,16 @@ public class Main{
             int schaal = verkopen.getBelastingSchaal();
             if(soort == "Groen Links"){
                 ElektrischeAuto verkoop = dealership.getFirstE();
-                verkopen.buyCar(verkoop);
+                
+                dealership.transferCarElectric(verkopen);
+                //verkopen.buyCar(verkoop);
             }else if (soort == "FVD"){
                 BenzineAuto verkoop = dealership.getFirstB();
-                verkopen.buyCar(verkoop);
+
+                // Vraag  om auto te kopen. 
+                dealership.transferCarBenzine(verkopen);
+
+                // verkopen.buyCar(verkoop);
 
             }
         }

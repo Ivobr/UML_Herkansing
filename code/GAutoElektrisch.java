@@ -25,4 +25,9 @@ public class GAutoElektrisch implements ElektrischeAuto {
         this.merk = merk;
         ProductiePrijs += color.prijs();
     }
+    @Override
+    public double getprijs() {
+        return ProductiePrijs;
+    }
+    
 }
