@@ -8,7 +8,8 @@ public class Dealer {
     AutoMerk bmw;
     AutoMerk audi;
     AutoMerk ford;
-
+    Onderhandeling Gonderhandel;
+    Onderhandeling Donderhandel;
     public Dealer(){
     }
 
@@ -66,10 +67,89 @@ public class Dealer {
         elek.informatie();
     }
 
+    public void transferElektrischeAuto(Klant klant){
+            System.out.println("\n");
+          System.out.println("\n");
+        System.out.println("Transfer elek Auto");
+        if(!ElektrischeAutos.isEmpty()){
+            ElektrischeAuto Verkoop = getFirstE();
+            int prijs = Verkoop.getprijs();
+            int onderhandeldeprijs = 0;
+            System.out.println("auto info:");
+            Verkoop.informatie();
+      
+
+            if(prijs > klant.getBudget()){
+                if(klant.getBudget() > (prijs * 2)) { // Klant heeft ruim voldoende budget, dus meer vragen
+                    onderhandeldeprijs =  Donderhandel.onderhandelPrijs(prijs, klant);
+                     
+                }
+                else { 
+                    onderhandeldeprijs =  Gonderhandel.onderhandelPrijs(prijs, klant);
+                    
+                }
+               if(onderhandeldeprijs != 0 ) { 
+                System.out.println("Prijs is onderhandeld met de klant, auto wordt overgedragen");
+                 klant.buyCar(Verkoop);
+                 ElektrischeAutos.remove(0);
+                
+               }
+               else {
+                System.out.println("mislukt, geen auto verkocht");
+               }
+            }
+            
+           
+          
+        }
+    
+    }
+
+    public void transferBenzineAuto(Klant klant){
+            System.out.println("\n");
+          System.out.println("\n");
+        System.out.println("Transfer Benzine Auto");
+        if(!BenzineAutos.isEmpty()){
+            BenzineAuto verkoop = getFirstB();
+            int prijs = verkoop.getprijs();
+            int onderhandeldeprijs = 0;
+            System.out.println("auto info:");
+            verkoop.informatie();
+            
+            
+           
+                if(klant.getBudget() > (prijs * 2)) { // Klant heeft ruim voldoende budget, dus meer vragen
+                    onderhandeldeprijs =  Donderhandel.onderhandelPrijs(prijs, klant);
+                }
+                else { 
+                    onderhandeldeprijs =  Gonderhandel.onderhandelPrijs(prijs, klant);
+                }
+                
+               if(onderhandeldeprijs != 0 ) { 
+                System.out.println("Prijs is onderhandeld met de klant, auto wordt overgedragen");
+                 klant.buyCar(verkoop);
+                 BenzineAutos.remove(0);
+                
+               
+              
+               
+            }
+            else { 
+
+                
+            }
+            
+           
+       
+        }
+        else { System.out.println("opperdepop");}
+      
+    }
+
     public ElektrischeAuto getFirstE(){
         if(!ElektrischeAutos.isEmpty()){
             ElektrischeAuto Verkoop =  ElektrischeAutos.getFirst();
-            ElektrischeAutos.removeFirst();
+            // ElektrischeAutos.removeFirst();
             return Verkoop;
         }
         return null;
@@ -77,7 +157,7 @@ public class Dealer {
     public BenzineAuto getFirstB(){
         if(!BenzineAutos.isEmpty()){
             BenzineAuto verkoop = BenzineAutos.getFirst();
-            BenzineAutos.removeFirst();
+            // BenzineAutos.removeFirst();
             return verkoop;
         }
         return null;

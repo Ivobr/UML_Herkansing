@@ -13,9 +13,12 @@ public class DAutoBenzine implements BenzineAuto {
     @Override
     public void informatie(){
         System.out.println(" ");
-        System.out.println(color.colorName());
-        System.out.println(merk.getMerk());
+        System.out.println("kleur" + color.colorName());
+        System.out.println("Merk" + merk.getMerk());
         System.out.println("DAutoBenzine €"+ ProductiePrijs);
+        System.out.println("\n " );
+        
+
     }
 
     public DAutoBenzine(Color color, AutoMerk merk){
@@ -23,4 +26,9 @@ public class DAutoBenzine implements BenzineAuto {
         this.merk = merk;
         ProductiePrijs += color.prijs();
     }
+    @Override
+    public int getprijs() {
+        return (int) ProductiePrijs;
+    }
+
 }

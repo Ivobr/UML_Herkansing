@@ -10,7 +10,7 @@ public class Main{
     public static Dealer dealership;
 
 
-    public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager){
+    public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager, Onderhandeling gonderhandel, Onderhandeling donderhandel){
         dealership = new Dealer();
         bmw = new BMW();
         audi = new Audi();
@@ -18,7 +18,8 @@ public class Main{
         bmw.setManagers(GManager, DManager);
         audi.setManagers(GManager, DManager);
         ford.setManagers(GManager, DManager);
-
+        dealership.Gonderhandel = new Gonderhandelaar();
+        dealership.Donderhandel = new Donderhandelaar();
         dealership.SetMerken(bmw, audi, ford);
         return dealership;
     }
@@ -50,7 +51,7 @@ public class Main{
         LinkedList<Klant> klanten = new LinkedList<Klant>();
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
-        Dealer dealership = setupDealer(GManager, DManager);
+        Dealer dealership = setupDealer(GManager, DManager, new Gonderhandelaar(), new Donderhandelaar());
 
 
         Color Groen = new Green();
@@ -107,11 +108,9 @@ public class Main{
             String soort = verkopen.getGekozenPartij();
             int schaal = verkopen.getBelastingSchaal();
             if(soort == "Groen Links"){
-                ElektrischeAuto verkoop = dealership.getFirstE();
-                verkopen.buyCar(verkoop);
+                dealership.transferElektrischeAuto(verkopen);
             }else if (soort == "FVD"){
-                BenzineAuto verkoop = dealership.getFirstB();
-                verkopen.buyCar(verkoop);
+                dealership.transferBenzineAuto(verkopen);
 
             }
         }

@@ -12,14 +12,19 @@ public class GAutoBenzine implements BenzineAuto {
     @Override
     public void informatie(){
         System.out.println(" ");
-        System.out.println(color.colorName());
-        System.out.println("GAutoBenzine €"+ ProductiePrijs);
-        System.out.println(merk.getMerk());
+       System.out.println("kleur: " + color.colorName());
+        System.out.println("Merk: " + merk.getMerk());
+        System.out.println("DAutoBenzine €: "+ ProductiePrijs);
+        System.out.println("\n " );
     }
 
     public GAutoBenzine(Color color, AutoMerk merk){
         this.color = color;
         this.merk = merk;
         ProductiePrijs += color.prijs();
+    }
+    @Override
+    public int getprijs() {
+        return (int) ProductiePrijs;
     }
 }

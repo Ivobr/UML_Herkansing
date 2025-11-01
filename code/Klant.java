@@ -7,6 +7,9 @@ public class Klant {
     private AutoMerk merk;
     private int belastingSchaal;
     private String GekozenPartij;
+    private int saldo = 60000;
+    private int budget = saldo / 4; // budget is klein deel van saldo
+    private int extraBudget = saldo  / 6; /// extra budget voor ondeerhandeling
     private LinkedList<Object> autos = new LinkedList<>();
 
     public Klant(Color kleur, AutoMerk merk, String gekozenPartij, int BelastingSchaal){
@@ -18,6 +21,22 @@ public class Klant {
     public Color getKleur() {
         return kleur;
     }
+    public int getsaldo(){
+
+        return saldo;
+    }
+
+    public int getBudget(){
+  
+        return budget;
+    }
+
+    public int vraagHogerBudget(){
+        int hogerBudget = budget + extraBudget;
+        return hogerBudget;
+    }
+
+
 
     public int getBelastingSchaal(){
         return belastingSchaal;
