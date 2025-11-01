@@ -8,6 +8,7 @@ public class Dealer {
     AutoMerk bmw;
     AutoMerk audi;
     AutoMerk ford;
+    double saldo = 100000.0f;
     Bank wittebank;
     String land;
 
@@ -71,19 +72,23 @@ public class Dealer {
     }
 // Transfer elektrische auto naar klant, 
     public void transferCarElectric(Klant k) { 
-        if (k.getLand() != null) {
+        if (k.getLand() != null && !ElektrischeAutos.isEmpty()) {
             if ( k.getLand() == "USA") { 
                 ElektrischeAuto Verkoop =  getFirstE();
-         
-                System.out.println("Price in USA: " + wittebank.GetLocalPrice(Verkoop.getprijs(), k.getLand())); // Bank verrekent prijs naar lokale valuta
+                 double localprice = wittebank.GetLocalPrice(Verkoop.getprijs(), k.getLand());
+                 System.out.println("Prijs in EUR: " + (int)Verkoop.getprijs());
+                 System.out.println("lokale prijs USD: " + (int)localprice);
+                 double klantsaldo = k.getSaldo();
+              
 
 
                 // check of klant genoeg saldo heeft
-                if(k.getSaldo() > wittebank.GetLocalPrice(Verkoop.getprijs(), k.getLand())){
+                if(klantsaldo > localprice){
                     k.verrekenkosten(wittebank.GetLocalPrice(Verkoop.getprijs(), k.getLand()));
+                    saldo += wittebank.wisselvanvaluta(Verkoop.getprijs(), k.getLand());
                      k.buyCar(Verkoop); // auto toeveogen aan de klant
 
-                ElektrischeAutos.removeFirst(); // auto verwijderen uit dealer voorraad
+                ElektrischeAutos.removeFirst(); // auto  verwijderen uit dealer voorraad
                 } else {
                     System.out.println("broke");
                     return;
@@ -92,17 +97,20 @@ public class Dealer {
             }
             else if( k.getLand() == "UK"){
                 ElektrischeAuto Verkoop =  getFirstE();
-              
-                System.out.println("Price in UK: " + wittebank.GetLocalPrice(Verkoop.getprijs(), k.getLand()));
+                double localprice = wittebank.GetLocalPrice(Verkoop.getprijs(), k.getLand());
+                 double klantsaldo = k.getSaldo();
+                System.out.println("Prijs in EUR: " + (int)Verkoop.getprijs());
+                 System.out.println("lokale prijs GBP: " + (int)localprice);
 
                 if(k.getSaldo() > wittebank.GetLocalPrice(Verkoop.getprijs(), k.getLand())){
                     k.verrekenkosten(wittebank.GetLocalPrice(Verkoop.getprijs(), k.getLand()));
+                    saldo += wittebank.wisselvanvaluta(Verkoop.getprijs(), k.getLand());
                      k.buyCar(Verkoop); // auto toeveogen aan de klant 
 
                 ElektrischeAutos.removeFirst(); // auto verwijderen uit dealer voorraad
                 }
                 else {
-                    System.out.println("broke boy");
+                        System.out.println("de klant heeft niet genoeg geld: Kosten: " + localprice + "Saldo klant: " + klantsaldo);
                     return;
                 };
                
@@ -111,13 +119,17 @@ public class Dealer {
     }
 
     public void transferCarBenzine(Klant k) { 
-        if (k.getLand() != null) {
+        if (k.getLand() != null && !BenzineAutos.isEmpty()) {
             if ( k.getLand() == "USA") { 
                 BenzineAuto verkoop = getFirstB();
+                 double localprice = wittebank.GetLocalPrice(verkoop.getprijs(), k.getLand());
+                 double klantsaldo = k.getSaldo();
                 //   wittebank.GetLocalPrice(verkoop.getprijs(), land);
-                System.out.println("Price in USA: " + wittebank.GetLocalPrice(verkoop.getprijs(), k.getLand())); 
-                if(k.getSaldo() > wittebank.GetLocalPrice(verkoop.getprijs(), k.getLand())){
+                System.out.println("Prijs in EUR: " + (int)verkoop.getprijs());
+                 System.out.println("lokale prijs USD: " + (int)localprice);
+                if(klantsaldo > localprice){
                     k.verrekenkosten(wittebank.GetLocalPrice(verkoop.getprijs(), k.getLand()));
+                    saldo += wittebank.wisselvanvaluta(localprice, k.getLand());
                     k.buyCar(verkoop);
                     BenzineAutos.removeFirst();
                 } else {
@@ -128,17 +140,23 @@ public class Dealer {
             }
             else if( k.getLand() == "UK"){
                 BenzineAuto verkoop = getFirstB();
+                double localprice = wittebank.GetLocalPrice(verkoop.getprijs(), k.getLand());
+                double klantsaldo = k.getSaldo();
                 //   wittebank.GetLocalPrice(verkoop.getprijs(), land);
-                System.out.println("Price in UK: " + wittebank.GetLocalPrice(verkoop.getprijs(), k.getLand())); 
+               System.out.println("Prijs in EUR: " + (int)verkoop.getprijs());
+                 System.out.println("lokale prijs GBP: " + (int)localprice);
 
-                if(k.getSaldo() > wittebank.GetLocalPrice(verkoop.getprijs(), k.getLand())){
+                if(klantsaldo > localprice){
 
                     k.verrekenkosten(wittebank.GetLocalPrice(verkoop.getprijs(), k.getLand()));
+                    saldo += wittebank.wisselvanvaluta(localprice, k.getLand());
                     k.buyCar(verkoop);
+                
                     BenzineAutos.removeFirst();
                 }
                 else {
-                    System.out.println("broke boy");
+                    System.out.println("de klant heeft niet genoeg geld: Kosten: " + localprice + "Saldo klant: " + klantsaldo);
+                    
                     return; 
                 }
                 
@@ -152,8 +170,6 @@ public class Dealer {
     public ElektrischeAuto getFirstE(){
         if(!ElektrischeAutos.isEmpty()){
             ElektrischeAuto Verkoop =  ElektrischeAutos.getFirst();
-            // wittebank.GetLocalPrice(Verkoop.getprijs(), land);
-            // ElektrischeAutos.removeFirst();
             return Verkoop;
         }
         return null;
@@ -161,8 +177,6 @@ public class Dealer {
     public BenzineAuto getFirstB(){
         if(!BenzineAutos.isEmpty()){
             BenzineAuto verkoop = BenzineAutos.getFirst();
-            //   wittebank.GetLocalPrice(verkoop.getprijs(), land);
-            // BenzineAutos.removeFirst();
             return verkoop;
         }
         return null;
