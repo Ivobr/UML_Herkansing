@@ -1,6 +1,6 @@
 package code;
 
-public class Blue implements Color{
+public class Blue implements Color {
     private String color = "Blue";
     private int prijs = 10;
 

@@ -2,13 +2,9 @@ package code;
 
 
 public class Gonderhandelaar implements Onderhandeling {
-    float winstmarge = 0.10f;
+    private float winstmarge = 0.10f;
 
-    
-    
-    
-
-   @Override
+    @Override
     public int onderhandelPrijs(Integer nieuwPrijs, Klant klant) {
     
         float prijsmetwinst = nieuwPrijs * (1 + winstmarge);
@@ -34,15 +30,11 @@ public class Gonderhandelaar implements Onderhandeling {
                     return (int)prijsmetwinst;
                 } else {
                     System.out.println("nogsteeds te duur");
-                    return  0;
+                    return 0;
                 }
-               
-            }
-           
-        }
-       
-    
-}
 
-  
+            }
+
+        }
+    }
 }

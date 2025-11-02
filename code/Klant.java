@@ -5,23 +5,27 @@ import java.util.LinkedList;
 public class Klant {
     private Color kleur;
     private AutoMerk merk;
- 
+
     private String GekozenPartij;
-    private int saldo;
-    private int budget = saldo / 4; // budget is klein deel van saldo
-    private int extraBudget = saldo  / 6; /// extra budget voor ondeerhandeling
+    private float saldo;
+    private float budget; // budget is klein deel van saldo
     private LinkedList<Object> autos = new LinkedList<>();
 
     public Klant(Color kleur, AutoMerk merk, String gekozenPartij, int saldo){
         this.kleur = kleur;
         this.merk = merk;
         this.saldo = saldo;
+        System.out.println(saldo / 4);
+        budget = saldo / 4;
+
+
         this.GekozenPartij = gekozenPartij;
     }
     public Color getKleur() {
         return kleur;
     }
-    public int getsaldo(){
+
+    public int getsaldo() {
 
         return saldo;
     }
@@ -37,9 +41,7 @@ public class Klant {
     }
 
 
-
-
-    public AutoMerk getMerk(){
+    public AutoMerk getMerk() {
         return merk;
     }
 

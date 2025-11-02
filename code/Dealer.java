@@ -3,23 +3,27 @@ package code;
 import java.util.ArrayList;
 
 public class Dealer {
-    ArrayList<BenzineAuto> BenzineAutos = new ArrayList<BenzineAuto>();
-    ArrayList<ElektrischeAuto> ElektrischeAutos = new ArrayList<>();
-    AutoMerk bmw;
-    AutoMerk audi;
-    AutoMerk ford;
-    Onderhandeling Gonderhandel;
-    Onderhandeling Donderhandel;
-    public Dealer(){
+    private ArrayList<BenzineAuto> BenzineAutos = new ArrayList<BenzineAuto>();
+    private ArrayList<ElektrischeAuto> ElektrischeAutos = new ArrayList<>();
+    private AutoMerk bmw;
+    private AutoMerk audi;
+    private AutoMerk ford;
+    private Onderhandeling Gonderhandel;
+    private Onderhandeling Donderhandel;
+
+    public Dealer(Onderhandeling Donderhandel, Onderhandeling Gonderhandel) {
+        this.Donderhandel = Donderhandel;
+        this.Gonderhandel = Gonderhandel;
     }
 
-    public void SetMerken(AutoMerk bmws, AutoMerk audis, AutoMerk fords){
+    public void SetMerken(AutoMerk bmws, AutoMerk audis, AutoMerk fords) {
 
         bmw = bmws;
         ford = fords;
         audi = audis;
     }
-    public void WhatForSale(){
+
+    public void WhatForSale() {
         System.out.println("Kleur, soort, merk: " + BenzineAutos);
         System.out.println("Kleur, soort, merk: " + ElektrischeAutos);
     }
@@ -27,7 +31,7 @@ public class Dealer {
     public void makeBenzineCar(int budget, AutoMerk autoMerk, Color kleur){
 
         String merk = autoMerk.getMerk();
-        switch(merk){
+        switch (merk) {
             case "Audi":
                 BenzineAuto newAudi = audi.UitstootMaken(budget, kleur, autoMerk);
                 BenzineAutos.add(newAudi);
@@ -49,7 +53,7 @@ public class Dealer {
     public void makeElektrischeAuto(int budget, AutoMerk autoMerk, Color kleur){
         String merk = autoMerk.getMerk();
 
-        switch(merk){
+        switch (merk) {
             case "Audi":
                 ElektrischeAuto newAudi = audi.ZuinigMaken(budget, kleur, autoMerk);
                 ElektrischeAutos.add(newAudi);
@@ -109,7 +113,7 @@ public class Dealer {
             System.out.println("\n");
           System.out.println("\n");
         System.out.println("Transfer Benzine Auto");
-        if(!BenzineAutos.isEmpty()){
+        if (!BenzineAutos.isEmpty()) {
             BenzineAuto verkoop = getFirstB();
             int prijs = verkoop.getprijs();
             int onderhandeldeprijs = 0;
@@ -127,35 +131,25 @@ public class Dealer {
                 
                if(onderhandeldeprijs != 0 ) { 
                 System.out.println("Prijs is onderhandeld met de klant, auto wordt overgedragen");
-                 klant.buyCar(verkoop);
-                 BenzineAutos.remove(0);
-                
-               
-              
-               
+                klant.buyCar(verkoop);
+                BenzineAutos.remove(0);
             }
-            else { 
-
-                
-            }
-            
-           
-       
+        } else {
+            System.out.println("opperdepop");
         }
-        else { System.out.println("opperdepop");}
-      
     }
 
-    public ElektrischeAuto getFirstE(){
-        if(!ElektrischeAutos.isEmpty()){
-            ElektrischeAuto Verkoop =  ElektrischeAutos.getFirst();
+    public ElektrischeAuto getFirstE() {
+        if (!ElektrischeAutos.isEmpty()) {
+            ElektrischeAuto Verkoop = ElektrischeAutos.getFirst();
             // ElektrischeAutos.removeFirst();
             return Verkoop;
         }
         return null;
     }
-    public BenzineAuto getFirstB(){
-        if(!BenzineAutos.isEmpty()){
+
+    public BenzineAuto getFirstB() {
+        if (!BenzineAutos.isEmpty()) {
             BenzineAuto verkoop = BenzineAutos.getFirst();
             // BenzineAutos.removeFirst();
             return verkoop;

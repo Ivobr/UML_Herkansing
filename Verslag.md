@@ -1,9 +1,6 @@
 # Verslag
 
-Thomas Blokdijk (1069992)
-Ivo Bruinsma (1082102)
-Thomas van Moolenbroek(1072869)
-Mees van der Waal (1052159)
+Thomas Blokdijk (1069992), Ivo Bruinsma (1082102), Thomas van Moolenbroek(1072869), Mees van der Waal (1052159)
 
 02/11/2025
 Eerste Kans

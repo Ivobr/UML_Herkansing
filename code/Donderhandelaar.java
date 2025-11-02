@@ -2,11 +2,7 @@ package code;
 
 
 public class Donderhandelaar implements Onderhandeling {
-    float winstmarge = 0.70f;
-
-    
-    
-    
+    private float winstmarge = 0.70f;
 
    @Override
     public int onderhandelPrijs(Integer nieuwPrijs, Klant klant) {
@@ -33,15 +29,11 @@ public class Donderhandelaar implements Onderhandeling {
                     return (int)prijsmetwinst;
                 } else {
                     System.out.println("nogsteeds te duur");
-                    return  0;
+                    return 0;
                 }
-               
+
             }
             // ask for a higher budget
         }
-    
-    
-}
-
-  
+    }
 }

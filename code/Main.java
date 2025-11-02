@@ -2,16 +2,20 @@ package code;
 
 import java.util.LinkedList;
 
-public class Main{
-    public static int keuze = 0;
+public class Main {
     public static AutoMerk bmw;
     public static AutoMerk audi;
     public static AutoMerk ford;
     public static Dealer dealership;
+    public static Onderhandeling Gonderhandel;
+    public static Onderhandeling Donderhandel;
 
 
-    public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager, Onderhandeling gonderhandel, Onderhandeling donderhandel){
-        dealership = new Dealer();
+    public static Dealer setupDealer(FabriekManager GManager, FabriekManager DManager) {
+        // Setup dealer, strategy toevoegen(Onderhandelaren), en de facade(automerk met bmw audi en ford)
+        Donderhandel = new Donderhandelaar();
+        Gonderhandel = new Gonderhandelaar();
+        dealership = new Dealer(Donderhandel, Gonderhandel);
         bmw = new BMW();
         audi = new Audi();
         ford = new Ford();
@@ -30,7 +34,7 @@ public class Main{
         FabriekManager GManager = new FabriekManager(GFabriek);
 
         System.out.println("Goedkope Fabriek Runt");
-        System.out.println(" ");t
+        System.out.println(" ");
 
         return GManager;
     }
@@ -40,18 +44,18 @@ public class Main{
        AutoFabriek DFabriek = new DFabriek();
        FabriekManager DManager = new FabriekManager(DFabriek);
 
-       System.out.println("Dure fAbrIek runt");
-       System.out.println(" ");
+        System.out.println("Dure fAbrIek runt");
+        System.out.println(" ");
 
-       return DManager;
+        return DManager;
     }
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         LinkedList<Klant> klanten = new LinkedList<Klant>();
         FabriekManager GManager = setupG();
         FabriekManager DManager = setupD();
-        Dealer dealership = setupDealer(GManager, DManager, new Gonderhandelaar(), new Donderhandelaar());
+        Dealer dealership = setupDealer(GManager, DManager);
 
 
         Color Groen = new Green();
@@ -66,16 +70,15 @@ public class Main{
         Klant klant1 = new Klant(Rood, ford, "Groen Links", 60000);
         klanten.add(klant1);
 
-        Klant klant2 = new Klant(geen, bmw, "FVD", 30001);
-        klanten.add(klant2);aa
+        Klant klant2 = new Klant(geen, bmw, "FVD", 39001);
+        klanten.add(klant2);
 
         System.out.println(klanten);
 
 
-
 //        System.out.println(klanten);
         int size = klanten.size();
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             System.out.println(i);
 
             Klant geholpen = klanten.get(i);
@@ -88,9 +91,9 @@ public class Main{
 
             int budget = geholpen.getBudget();
             System.out.println(type);
-            if(type == "Groen Links"){
+            if (type == "Groen Links") {
                 dealership.makeElektrischeAuto(budget, merk, kleur);
-            }else if (type == "FVD"){
+            } else if (type == "FVD") {
                 dealership.makeBenzineCar(budget, merk, kleur);
             }
 
@@ -101,14 +104,14 @@ public class Main{
 
     }
 
-    public static void verkoop(LinkedList<Klant> klanten){
+    public static void verkoop(LinkedList<Klant> klanten) {
         int size = klanten.size();
-        for(int i = 0; i < size; i++){
+        for (int i = 0; i < size; i++) {
             Klant verkopen = klanten.get(i);
             String soort = verkopen.getGekozenPartij();
             if(soort == "Groen Links"){
                 dealership.transferElektrischeAuto(verkopen);
-            }else if (soort == "FVD"){
+            } else if (soort == "FVD") {
                 dealership.transferBenzineAuto(verkopen);
 
             }

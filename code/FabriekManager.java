@@ -1,25 +1,25 @@
 package code;
+
 public class FabriekManager {
     // Fabriek niet maken maar aanroepen!
 
     private BenzineAuto benzineAuto;
     private ElektrischeAuto elektrischeAuto;
     private AutoFabriek fabriek;
-    public FabriekManager(AutoFabriek fabriek){
+
+    public FabriekManager(AutoFabriek fabriek) {
         this.fabriek = fabriek;
     }
 
-    public BenzineAuto makeBenzineAuto(AutoFabriek fabriek, Color kleur, AutoMerk merk){
+    public BenzineAuto makeBenzineAuto(AutoFabriek fabriek, Color kleur, AutoMerk merk) {
         this.benzineAuto = fabriek.createBenzineAuto(kleur, merk);
         System.out.println("Benzine auto gemaakt");
-//        benzineAuto.informatie();
         return benzineAuto;
     }
 
-    public ElektrischeAuto makeElektrischeAuto(AutoFabriek fabriek, Color kleur, AutoMerk merk){
+    public ElektrischeAuto makeElektrischeAuto(AutoFabriek fabriek, Color kleur, AutoMerk merk) {
         this.elektrischeAuto = fabriek.createElektrischeAuto(kleur, merk);
         System.out.println("Elektrische auto gemaakt");
-//        elektrischeAuto.informatie();
         return elektrischeAuto;
     }
 
@@ -32,7 +32,7 @@ public class FabriekManager {
         if(benzineAuto != null) {
             benzineAuto.informatie();
         }
-        if(elektrischeAuto != null) {
+        if (elektrischeAuto != null) {
             elektrischeAuto.informatie();
         }
     }

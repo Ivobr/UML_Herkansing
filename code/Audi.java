@@ -1,6 +1,6 @@
 package code;
 
-public class Audi implements AutoMerk{
+public class Audi implements AutoMerk {
 
     private FabriekManager GoedkoopManager;
     private FabriekManager DuurManager;
@@ -12,18 +12,19 @@ public class Audi implements AutoMerk{
     }
 
     @Override
-    public void setManagers(FabriekManager GManager, FabriekManager DManager){
+    public void setManagers(FabriekManager GManager, FabriekManager DManager) {
         GoedkoopManager = GManager;
         DuurManager = DManager;
         System.out.println(DuurManager + " " + GoedkoopManager);
     }
 
     @Override
-    public BenzineAuto UitstootMaken(int budget, Color kleur, AutoMerk merk){
-        if(budget < 30000){
+    // Maak goedkoop of dure beinzine auto aan, gebaseerd op budget wordt bepaald of goedkope of dure auto is
+    public BenzineAuto UitstootMaken(float budget, Color kleur, AutoMerk merk) {
+        if (budget < 30000) {
             BenzineAuto benzineAuto = GoedkoopManager.makeBenzineAuto(GoedkoopManager.getFabriek(), kleur, merk);
             return benzineAuto;
-        }else if (budget > 30000) {
+        } else if (budget > 30000) {
             BenzineAuto benzineAuto = DuurManager.makeBenzineAuto(DuurManager.getFabriek(), kleur, merk);
             return benzineAuto;
         }
@@ -35,7 +36,7 @@ public class Audi implements AutoMerk{
         if(budget < 30000){
             ElektrischeAuto elektrischeAuto = GoedkoopManager.makeElektrischeAuto(GoedkoopManager.getFabriek(), kleur, merk);
             return elektrischeAuto;
-        }else if (budget > 30000) {
+        } else if (budget > 30000) {
             ElektrischeAuto elektrischeAuto = DuurManager.makeElektrischeAuto(DuurManager.getFabriek(), kleur, merk);
             return elektrischeAuto;
         }
