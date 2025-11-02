@@ -24,20 +24,20 @@ public class Dealer {
         System.out.println("Kleur, soort, merk: " + ElektrischeAutos);
     }
 
-    public void makeBenzineCar(int belastinSchaal, AutoMerk autoMerk, Color kleur){
+    public void makeBenzineCar(int budget, AutoMerk autoMerk, Color kleur){
 
         String merk = autoMerk.getMerk();
         switch(merk){
             case "Audi":
-                BenzineAuto newAudi = audi.UitstootMaken(belastinSchaal, kleur, autoMerk);
+                BenzineAuto newAudi = audi.UitstootMaken(budget, kleur, autoMerk);
                 BenzineAutos.add(newAudi);
                 break;
             case "Ford":
-                BenzineAuto newFord = ford.UitstootMaken(belastinSchaal, kleur, autoMerk);
+                BenzineAuto newFord = ford.UitstootMaken(budget, kleur, autoMerk);
                 BenzineAutos.add(newFord);
                 break;
             case "BMW":
-                BenzineAuto newBMW = bmw.UitstootMaken(belastinSchaal, kleur, autoMerk);
+                BenzineAuto newBMW = bmw.UitstootMaken(budget, kleur, autoMerk);
                 BenzineAutos.add(newBMW);
                 break;
         }
@@ -46,20 +46,20 @@ public class Dealer {
         BenzineAutoB.informatie();
     }
 
-    public void makeElektrischeAuto(int belastinSchaal, AutoMerk autoMerk, Color kleur){
+    public void makeElektrischeAuto(int budget, AutoMerk autoMerk, Color kleur){
         String merk = autoMerk.getMerk();
 
         switch(merk){
             case "Audi":
-                ElektrischeAuto newAudi = audi.ZuinigMaken(belastinSchaal, kleur, autoMerk);
+                ElektrischeAuto newAudi = audi.ZuinigMaken(budget, kleur, autoMerk);
                 ElektrischeAutos.add(newAudi);
                 break;
             case "Ford":
-                ElektrischeAuto newFord = ford.ZuinigMaken(belastinSchaal, kleur, autoMerk);
+                ElektrischeAuto newFord = ford.ZuinigMaken(budget, kleur, autoMerk);
                 ElektrischeAutos.add(newFord);
                 break;
             case "BMW":
-                ElektrischeAuto newBMW = bmw.ZuinigMaken(belastinSchaal, kleur, autoMerk);
+                ElektrischeAuto newBMW = bmw.ZuinigMaken(budget, kleur, autoMerk);
                 ElektrischeAutos.add(newBMW);
                 break;
         }

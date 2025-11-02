@@ -19,12 +19,12 @@ public class BMW implements AutoMerk{
     }
 
     @Override
-    public BenzineAuto UitstootMaken(int belastingSchaal, Color kleur, AutoMerk merk){
-        if(belastingSchaal < 3){
+    public BenzineAuto UitstootMaken(int budget, Color kleur, AutoMerk merk){
+        if(budget < 30000){
             BenzineAuto benzineAuto = GoedkoopManager.makeBenzineAuto(GoedkoopManager.getFabriek(), kleur, merk);
             benzineAuto.informatie();
             return benzineAuto;
-        }else if (belastingSchaal == 3) {
+        }else if (budget > 30000) {
             BenzineAuto benzineAuto = DuurManager.makeBenzineAuto(DuurManager.getFabriek(), kleur, merk);
             benzineAuto.informatie();
             return benzineAuto;
@@ -33,12 +33,12 @@ public class BMW implements AutoMerk{
     }
 
     @Override
-    public ElektrischeAuto ZuinigMaken(int belastingSchaal, Color kleur, AutoMerk merk){
-        if(belastingSchaal < 3){
+    public ElektrischeAuto ZuinigMaken(int budget, Color kleur, AutoMerk merk){
+        if(budget < 30000){
             ElektrischeAuto elektrischeAuto = GoedkoopManager.makeElektrischeAuto(GoedkoopManager.getFabriek(), kleur, merk);
             elektrischeAuto.informatie();
             return elektrischeAuto;
-        }else if (belastingSchaal == 3) {
+        }else if (budget > 30000) {
             ElektrischeAuto elektrischeAuto = DuurManager.makeElektrischeAuto(DuurManager.getFabriek(), kleur, merk);
             elektrischeAuto.informatie();
             return elektrischeAuto;

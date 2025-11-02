@@ -30,7 +30,7 @@ public class Main{
         FabriekManager GManager = new FabriekManager(GFabriek);
 
         System.out.println("Goedkope Fabriek Runt");
-        System.out.println(" ");
+        System.out.println(" ");t
 
         return GManager;
     }
@@ -60,14 +60,14 @@ public class Main{
         Color geen = new Blank();
 
 
-        Klant klant = new Klant(Groen, audi, "FVD", 1);
+        Klant klant = new Klant(Groen, audi, "FVD", 29999);
         klanten.add(klant);
 
-        Klant klant1 = new Klant(Rood, ford, "Groen Links", 3);
+        Klant klant1 = new Klant(Rood, ford, "Groen Links", 60000);
         klanten.add(klant1);
 
-        Klant klant2 = new Klant(geen, bmw, "FVD", 2);
-        klanten.add(klant2);
+        Klant klant2 = new Klant(geen, bmw, "FVD", 30001);
+        klanten.add(klant2);aa
 
         System.out.println(klanten);
 
@@ -86,12 +86,12 @@ public class Main{
             Color kleur = geholpen.getKleur();
             String type = geholpen.getGekozenPartij();
 
-            int belastingSchaal = geholpen.getBelastingSchaal();
+            int budget = geholpen.getBudget();
             System.out.println(type);
             if(type == "Groen Links"){
-                dealership.makeElektrischeAuto(belastingSchaal, merk, kleur);
+                dealership.makeElektrischeAuto(budget, merk, kleur);
             }else if (type == "FVD"){
-                dealership.makeBenzineCar(belastingSchaal, merk, kleur);
+                dealership.makeBenzineCar(budget, merk, kleur);
             }
 
         }
@@ -106,7 +106,6 @@ public class Main{
         for(int i = 0; i < size; i++){
             Klant verkopen = klanten.get(i);
             String soort = verkopen.getGekozenPartij();
-            int schaal = verkopen.getBelastingSchaal();
             if(soort == "Groen Links"){
                 dealership.transferElektrischeAuto(verkopen);
             }else if (soort == "FVD"){
