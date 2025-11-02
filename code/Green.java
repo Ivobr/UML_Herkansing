@@ -1,7 +1,7 @@
 package code;
 
 import java.util.Random;
-
+// Kleur groen
 public class Green implements Color{
     private String color = "Green";
 

@@ -1,5 +1,6 @@
 package code;
 
+// goedkope fabriek, maakt goedkopeauto's
 public class GFabriek implements AutoFabriek {
     @Override
     public BenzineAuto createBenzineAuto(Color kleur, AutoMerk merk) {

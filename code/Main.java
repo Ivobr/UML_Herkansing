@@ -22,14 +22,13 @@ public class Main {
         bmw.setManagers(GManager, DManager);
         audi.setManagers(GManager, DManager);
         ford.setManagers(GManager, DManager);
-        dealership.Gonderhandel = new Gonderhandelaar();
-        dealership.Donderhandel = new Donderhandelaar();
+
         dealership.SetMerken(bmw, audi, ford);
         return dealership;
     }
 
-    public static FabriekManager setupG(){
-
+    public static FabriekManager setupG() {
+        // setup fabrieksmanager geef de fabrieksmanager een fabriek, voor goedkope manager
         AutoFabriek GFabriek = new GFabriek();
         FabriekManager GManager = new FabriekManager(GFabriek);
 
@@ -39,10 +38,10 @@ public class Main {
         return GManager;
     }
 
-    public static FabriekManager setupD(){
-
-       AutoFabriek DFabriek = new DFabriek();
-       FabriekManager DManager = new FabriekManager(DFabriek);
+    public static FabriekManager setupD() {
+        // setup fabrieksmanager geef de fabrieksmanager een fabriek, voor duur manager
+        AutoFabriek DFabriek = new DFabriek();
+        FabriekManager DManager = new FabriekManager(DFabriek);
 
         System.out.println("Dure fAbrIek runt");
         System.out.println(" ");
@@ -57,13 +56,13 @@ public class Main {
         FabriekManager DManager = setupD();
         Dealer dealership = setupDealer(GManager, DManager);
 
-
+        // Maak kleuren aan
         Color Groen = new Green();
         Color Rood = new Red();
         Color Blauw = new Blue();
         Color geen = new Blank();
 
-
+        // maak klant objecten aan met Kleur, gewenste auto, partij en saldo
         Klant klant = new Klant(Groen, audi, "FVD", 29999);
         klanten.add(klant);
 
@@ -88,8 +87,8 @@ public class Main {
             AutoMerk merk = geholpen.getMerk();
             Color kleur = geholpen.getKleur();
             String type = geholpen.getGekozenPartij();
-
-            int budget = geholpen.getBudget();
+            // Maak type auto gebaseerd op partij
+            float budget = geholpen.getBudget();
             System.out.println(type);
             if (type == "Groen Links") {
                 dealership.makeElektrischeAuto(budget, merk, kleur);
@@ -109,7 +108,8 @@ public class Main {
         for (int i = 0; i < size; i++) {
             Klant verkopen = klanten.get(i);
             String soort = verkopen.getGekozenPartij();
-            if(soort == "Groen Links"){
+            // Gebaseerd op partij geef de klant de auto
+            if (soort == "Groen Links") {
                 dealership.transferElektrischeAuto(verkopen);
             } else if (soort == "FVD") {
                 dealership.transferBenzineAuto(verkopen);

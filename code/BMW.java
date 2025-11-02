@@ -19,8 +19,9 @@ public class BMW implements AutoMerk {
     }
 
     @Override
-    public BenzineAuto UitstootMaken(int budget, Color kleur, AutoMerk merk){
-        if(budget < 30000){
+    // Maak goedkoop of dure benzine auto aan, gebaseerd op budget wordt bepaald of goedkope of dure auto is
+    public BenzineAuto UitstootMaken(float budget, Color kleur, AutoMerk merk) {
+        if (budget < 30000) {
             BenzineAuto benzineAuto = GoedkoopManager.makeBenzineAuto(GoedkoopManager.getFabriek(), kleur, merk);
             benzineAuto.informatie();
             return benzineAuto;
@@ -33,8 +34,9 @@ public class BMW implements AutoMerk {
     }
 
     @Override
-    public ElektrischeAuto ZuinigMaken(int budget, Color kleur, AutoMerk merk){
-        if(budget < 30000){
+// Maak goedkoop of dure elektrische auto aan, gebaseerd op budget wordt bepaald of goedkope of dure auto is
+    public ElektrischeAuto ZuinigMaken(float budget, Color kleur, AutoMerk merk) {
+        if (budget < 30000) {
             ElektrischeAuto elektrischeAuto = GoedkoopManager.makeElektrischeAuto(GoedkoopManager.getFabriek(), kleur, merk);
             elektrischeAuto.informatie();
             return elektrischeAuto;

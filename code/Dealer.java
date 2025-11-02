@@ -28,7 +28,7 @@ public class Dealer {
         System.out.println("Kleur, soort, merk: " + ElektrischeAutos);
     }
 
-    public void makeBenzineCar(int budget, AutoMerk autoMerk, Color kleur){
+    public void makeBenzineCar(float budget, AutoMerk autoMerk, Color kleur) {
 
         String merk = autoMerk.getMerk();
         switch (merk) {
@@ -50,7 +50,7 @@ public class Dealer {
         BenzineAutoB.informatie();
     }
 
-    public void makeElektrischeAuto(int budget, AutoMerk autoMerk, Color kleur){
+    public void makeElektrischeAuto(float budget, AutoMerk autoMerk, Color kleur) {
         String merk = autoMerk.getMerk();
 
         switch (merk) {
@@ -71,47 +71,41 @@ public class Dealer {
         elek.informatie();
     }
 
-    public void transferElektrischeAuto(Klant klant){
-            System.out.println("\n");
-          System.out.println("\n");
-        System.out.println("Transfer elek Auto");
-        if(!ElektrischeAutos.isEmpty()){
-            ElektrischeAuto Verkoop = getFirstE();
-            int prijs = Verkoop.getprijs();
+
+    // Transfer car van dealer naar klant
+    public void transferElektrischeAuto(Klant klant) {
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("Transfer Elektrische Auto");
+        if (!ElektrischeAutos.isEmpty()) {
+            ElektrischeAuto verkoop = getFirstE();
+            int prijs = verkoop.getprijs();
             int onderhandeldeprijs = 0;
             System.out.println("auto info:");
-            Verkoop.informatie();
-      
+            verkoop.informatie();
 
-            if(prijs > klant.getBudget()){
-                if(klant.getBudget() > (prijs * 2)) { // Klant heeft ruim voldoende budget, dus meer vragen
-                    onderhandeldeprijs =  Donderhandel.onderhandelPrijs(prijs, klant);
-                     
-                }
-                else { 
-                    onderhandeldeprijs =  Gonderhandel.onderhandelPrijs(prijs, klant);
-                    
-                }
-               if(onderhandeldeprijs != 0 ) { 
-                System.out.println("Prijs is onderhandeld met de klant, auto wordt overgedragen");
-                 klant.buyCar(Verkoop);
-                 ElektrischeAutos.remove(0);
-                
-               }
-               else {
-                System.out.println("mislukt, geen auto verkocht");
-               }
+            if (klant.getBudget() < (prijs * 2)) { // Klant heeft ruim voldoende budget, dus meer vragen
+                onderhandeldeprijs = Donderhandel.onderhandelPrijs(prijs, klant);
+            } else {
+                onderhandeldeprijs = Gonderhandel.onderhandelPrijs(prijs, klant);
             }
-            
-           
-          
+
+            if (onderhandeldeprijs != 0) {
+                System.out.println("Prijs is onderhandeld met de klant, auto wordt overgedragen");
+                klant.buyCar(verkoop);
+                ElektrischeAutos.remove(0);
+            }
+
+        } else {
+            System.out.println("opperdepop");
         }
-    
+
     }
 
-    public void transferBenzineAuto(Klant klant){
-            System.out.println("\n");
-          System.out.println("\n");
+    // transfer car van dealer naar klant
+    public void transferBenzineAuto(Klant klant) {
+        System.out.println("\n");
+        System.out.println("\n");
         System.out.println("Transfer Benzine Auto");
         if (!BenzineAutos.isEmpty()) {
             BenzineAuto verkoop = getFirstB();
@@ -119,17 +113,14 @@ public class Dealer {
             int onderhandeldeprijs = 0;
             System.out.println("auto info:");
             verkoop.informatie();
-            
-            
-           
-                if(klant.getBudget() > (prijs * 2)) { // Klant heeft ruim voldoende budget, dus meer vragen
-                    onderhandeldeprijs =  Donderhandel.onderhandelPrijs(prijs, klant);
-                }
-                else { 
-                    onderhandeldeprijs =  Gonderhandel.onderhandelPrijs(prijs, klant);
-                }
-                
-               if(onderhandeldeprijs != 0 ) { 
+
+            if (klant.getBudget() < (prijs * 2)) { // Klant heeft ruim voldoende budget, dus meer vragen
+                onderhandeldeprijs = Donderhandel.onderhandelPrijs(prijs, klant);
+            } else {
+                onderhandeldeprijs = Gonderhandel.onderhandelPrijs(prijs, klant);
+            }
+
+            if (onderhandeldeprijs != 0) {
                 System.out.println("Prijs is onderhandeld met de klant, auto wordt overgedragen");
                 klant.buyCar(verkoop);
                 BenzineAutos.remove(0);

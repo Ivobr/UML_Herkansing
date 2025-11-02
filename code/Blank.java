@@ -1,6 +1,7 @@
 package code;
 
-public class Blank implements Color{
+// kleur blank met extra prijs
+public class Blank implements Color {
     private String color = "None";
     private int prijs = 0;
 

@@ -32,8 +32,9 @@ public class Audi implements AutoMerk {
     }
 
     @Override
-    public ElektrischeAuto ZuinigMaken(int budget, Color kleur, AutoMerk merk){
-        if(budget < 30000){
+    public ElektrischeAuto ZuinigMaken(float budget, Color kleur, AutoMerk merk) {
+        // Maak goedkoop of dure elektrische auto aan, gebaseerd op budget wordt bepaald of goedkope of dure auto is
+        if (budget < 30000) {
             ElektrischeAuto elektrischeAuto = GoedkoopManager.makeElektrischeAuto(GoedkoopManager.getFabriek(), kleur, merk);
             return elektrischeAuto;
         } else if (budget > 30000) {

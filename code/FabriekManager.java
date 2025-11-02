@@ -27,9 +27,9 @@ public class FabriekManager {
         return fabriek;
     }
 
-
-    public void informatie(){
-        if(benzineAuto != null) {
+    // print informatie auto via fabriekmanager
+    public void informatie() {
+        if (benzineAuto != null) {
             benzineAuto.informatie();
         }
         if (elektrischeAuto != null) {

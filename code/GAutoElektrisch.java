@@ -8,12 +8,13 @@ public class GAutoElektrisch implements ElektrischeAuto {
     private double ProductiePrijs = 23000;
 
     @Override
-    public void informatie(){
+    // print informatie auto
+    public void informatie() {
         System.out.println(" ");
         System.out.println("kleur: " + color.colorName());
         System.out.println("Merk: " + merk.getMerk());
-        System.out.println("DAutoBenzine €: "+ ProductiePrijs);
-        System.out.println("\n " );
+        System.out.println("Gautoelektrisch €: " + ProductiePrijs);
+        System.out.println("\n ");
     }
 
     public GAutoElektrisch(Color color, AutoMerk merk) {

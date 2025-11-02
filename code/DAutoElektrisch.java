@@ -7,7 +7,8 @@ public class DAutoElektrisch implements ElektrischeAuto {
     private double ProductiePrijs = 120000;
 
     @Override
-    public void informatie(){
+    //print info
+    public void informatie() {
         System.out.println(" ");
         System.out.println("kleur: " + color.colorName());
         System.out.println("Merk: " + merk.getMerk());

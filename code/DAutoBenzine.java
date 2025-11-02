@@ -1,5 +1,6 @@
 package code;
 
+// dure benzineauto
 public class DAutoBenzine implements BenzineAuto {
 
     private Color color;
@@ -7,7 +8,8 @@ public class DAutoBenzine implements BenzineAuto {
     private double ProductiePrijs = 21000;
 
     @Override
-    public void informatie(){
+    // print info
+    public void informatie() {
         System.out.println(" ");
         System.out.println("kleur" + color.colorName());
         System.out.println("Merk" + merk.getMerk());
