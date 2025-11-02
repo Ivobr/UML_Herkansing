@@ -7,13 +7,18 @@ public class Klant {
     private AutoMerk merk;
     private int belastingSchaal;
     private String GekozenPartij;
+    private String valuta;          // Yen, Euro, Dollar
     private LinkedList<Object> autos = new LinkedList<>();
 
-    public Klant(Color kleur, AutoMerk merk, String gekozenPartij, int BelastingSchaal){
+    // rekening
+
+
+    public Klant(Color kleur, AutoMerk merk, String gekozenPartij, int BelastingSchaal, String valuta){
         this.kleur = kleur;
         this.merk = merk;
         this.belastingSchaal = BelastingSchaal;
         this.GekozenPartij = gekozenPartij;
+        this.valuta = valuta;
     }
     public Color getKleur() {
         return kleur;
@@ -31,9 +36,16 @@ public class Klant {
         return GekozenPartij;
     }
 
+    public String getValuta(){
+        return valuta;
+    }
+
+
+    // Prijs van rekening af (return)
     public void buyCar(Object obj){
         autos.add(obj);
         System.out.println(autos + "Belastingschaal: " + belastingSchaal);
 
     }
+
 }

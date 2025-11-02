@@ -8,8 +8,12 @@ public class Dealer {
     AutoMerk bmw;
     AutoMerk audi;
     AutoMerk ford;
+    Bank mijnBank;
+
+    //rekening
 
     public Dealer(){
+        Bank mijnBank = new Bank();
     }
 
     public void SetMerken(AutoMerk bmws, AutoMerk audis, AutoMerk fords){
@@ -81,5 +85,10 @@ public class Dealer {
             return verkoop;
         }
         return null;
+    }
+
+    public Double omrekenen(double oudePrijs){
+        double nieuwePrijs = mijnBank.ToEuro(oudePrijs);
+        return nieuwePrijs;
     }
 }
